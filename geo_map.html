@@ -1,0 +1,2109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2860d73a0533ecbd72315f5c3dc19339 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2860d73a0533ecbd72315f5c3dc19339" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2860d73a0533ecbd72315f5c3dc19339 = L.map(
+                "map_2860d73a0533ecbd72315f5c3dc19339",
+                {
+                    center: [26.40488921568627, 86.67965247058824],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_2860d73a0533ecbd72315f5c3dc19339);
+
+            
+
+        
+    
+            var tile_layer_f6fb99df8c7a7aa58bdfce7e1201b53b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f6fb99df8c7a7aa58bdfce7e1201b53b.addTo(map_2860d73a0533ecbd72315f5c3dc19339);
+        
+    
+            var tile_layer_93c449844bf160adcc1b02dabe631ef0 = L.tileLayer(
+                "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "OpenTopoMap",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            var feature_group_748066d970a938f3ec3f953684be2263 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_6573b172e933ac2dd95a5c67b8f17790 = L.marker(
+                [35.6895, 139.767],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_1e6d1cb6bebc91ebefcb7450bc1231f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19a7ccad6189203050456e03fb7ff3d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_227ba7da6542f6af9a9ecc157ec0e863 = $(`<div id="html_227ba7da6542f6af9a9ecc157ec0e863" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>外堀通り, 内神田二丁目, 内神田, 千代田区, 東京都, 102-0000, 日本</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 35.689500°, 139.767000°<br>                 <b>Projected:</b> X=24393.94, Y=6675.90<br>                 <b>Reversed:</b> 35.689500°, 139.767000°             </div>         </div>         </div>`)[0];
+                popup_19a7ccad6189203050456e03fb7ff3d4.setContent(html_227ba7da6542f6af9a9ecc157ec0e863);
+            
+        
+
+        marker_6573b172e933ac2dd95a5c67b8f17790.bindPopup(popup_19a7ccad6189203050456e03fb7ff3d4)
+        ;
+
+        
+    
+    
+                marker_6573b172e933ac2dd95a5c67b8f17790.setIcon(icon_1e6d1cb6bebc91ebefcb7450bc1231f3);
+            
+    
+            var marker_1b791ba9f9b4670ed7d2fda529e675c8 = L.marker(
+                [8.33295, 88.900933],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_1404587cb644a03626357329ba77ab03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_224ee05cb7a4b5ec62d358d7477cf506 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_91ba9c3046d98b258c0fe4750d9aa1a7 = $(`<div id="html_91ba9c3046d98b258c0fe4750d9aa1a7" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Not found</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 8.332950°, 88.900933°<br>                 <b>Projected:</b> X=15516.14, Y=1459.53<br>                 <b>Reversed:</b> 8.332950°, 88.900933°             </div>         </div>         </div>`)[0];
+                popup_224ee05cb7a4b5ec62d358d7477cf506.setContent(html_91ba9c3046d98b258c0fe4750d9aa1a7);
+            
+        
+
+        marker_1b791ba9f9b4670ed7d2fda529e675c8.bindPopup(popup_224ee05cb7a4b5ec62d358d7477cf506)
+        ;
+
+        
+    
+    
+                marker_1b791ba9f9b4670ed7d2fda529e675c8.setIcon(icon_1404587cb644a03626357329ba77ab03);
+            
+    
+            var marker_3784a536611f9e0e771550f81dd342a4 = L.marker(
+                [27.769601, 83.57214],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_a68a76bb10e2879dab8077318625d10d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9fec3441fbda81f8647e422e7103872e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2563d327285f0ced0f908dbe34f6ee4d = $(`<div id="html_2563d327285f0ced0f908dbe34f6ee4d" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Koldanda, Tinau-05, Tinau, पाल्पा, लुम्बिनी प्रदेश, नेपाल</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 27.769601°, 83.572140°<br>                 <b>Projected:</b> X=14586.09, Y=5048.43<br>                 <b>Reversed:</b> 27.769601°, 83.572140°             </div>         </div>         </div>`)[0];
+                popup_9fec3441fbda81f8647e422e7103872e.setContent(html_2563d327285f0ced0f908dbe34f6ee4d);
+            
+        
+
+        marker_3784a536611f9e0e771550f81dd342a4.bindPopup(popup_9fec3441fbda81f8647e422e7103872e)
+        ;
+
+        
+    
+    
+                marker_3784a536611f9e0e771550f81dd342a4.setIcon(icon_a68a76bb10e2879dab8077318625d10d);
+            
+    
+            var marker_6b5a044f8eb09e0a2d0541cf7751c58f = L.marker(
+                [15.737931, 86.587892],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_a51a546613e7f721959ebaf5fb2ac065 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_407191e7712293af062974a475f95fa7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c56a9dd208bfacc0d9b18b9e3540b16 = $(`<div id="html_1c56a9dd208bfacc0d9b18b9e3540b16" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Not found</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 15.737931°, 86.587892°<br>                 <b>Projected:</b> X=15112.44, Y=2781.99<br>                 <b>Reversed:</b> 15.737931°, 86.587892°             </div>         </div>         </div>`)[0];
+                popup_407191e7712293af062974a475f95fa7.setContent(html_1c56a9dd208bfacc0d9b18b9e3540b16);
+            
+        
+
+        marker_6b5a044f8eb09e0a2d0541cf7751c58f.bindPopup(popup_407191e7712293af062974a475f95fa7)
+        ;
+
+        
+    
+    
+                marker_6b5a044f8eb09e0a2d0541cf7751c58f.setIcon(icon_a51a546613e7f721959ebaf5fb2ac065);
+            
+    
+            var marker_a06abf9c11ee4919ffc37841b90da2a5 = L.marker(
+                [11.235013, 80.608192],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_25f979ef970a2d11b96892d64bb9c357 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c1d1dd75969b1ccdda992c41d3c7a2c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_088d6120c518190a59973336a8af9b3e = $(`<div id="html_088d6120c518190a59973336a8af9b3e" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Not found</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 11.235013°, 80.608192°<br>                 <b>Projected:</b> X=14068.78, Y=1973.57<br>                 <b>Reversed:</b> 11.235013°, 80.608192°             </div>         </div>         </div>`)[0];
+                popup_9c1d1dd75969b1ccdda992c41d3c7a2c.setContent(html_088d6120c518190a59973336a8af9b3e);
+            
+        
+
+        marker_a06abf9c11ee4919ffc37841b90da2a5.bindPopup(popup_9c1d1dd75969b1ccdda992c41d3c7a2c)
+        ;
+
+        
+    
+    
+                marker_a06abf9c11ee4919ffc37841b90da2a5.setIcon(icon_25f979ef970a2d11b96892d64bb9c357);
+            
+    
+            var marker_0fbb3aa8cf926fe7785aaa9ebb14ac77 = L.marker(
+                [21.157987, 95.660662],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_069653b4e5d26de7904c25ada0f4b936 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5e69838a902b1573b5925bf4997acf1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52b1cfb4464182af390d25749e909f89 = $(`<div id="html_52b1cfb4464182af390d25749e909f89" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>မလှိုင်, မိတ္ထီလာခရိုင်, မန္တလေးတိုင်း, မြန်မာ</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 21.157987°, 95.660662°<br>                 <b>Projected:</b> X=16695.94, Y=3779.67<br>                 <b>Reversed:</b> 21.157987°, 95.660662°             </div>         </div>         </div>`)[0];
+                popup_b5e69838a902b1573b5925bf4997acf1.setContent(html_52b1cfb4464182af390d25749e909f89);
+            
+        
+
+        marker_0fbb3aa8cf926fe7785aaa9ebb14ac77.bindPopup(popup_b5e69838a902b1573b5925bf4997acf1)
+        ;
+
+        
+    
+    
+                marker_0fbb3aa8cf926fe7785aaa9ebb14ac77.setIcon(icon_069653b4e5d26de7904c25ada0f4b936);
+            
+    
+            var marker_e4dca25f827160f90216a95823d6356c = L.marker(
+                [33.399735, 75.638282],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_e5eb69b6b7f867c5745c933c639ef29c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_220fcc41698ccb8db61760bc16a26f14 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea9139d9b095162acff653a345fd8d2e = $(`<div id="html_ea9139d9b095162acff653a345fd8d2e" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>NH244, Batiwor, Chatru, Chhatroo, Kishtwar, Jammu and Kashmir, India</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 33.399735°, 75.638282°<br>                 <b>Projected:</b> X=13201.37, Y=6190.65<br>                 <b>Reversed:</b> 33.399735°, 75.638282°             </div>         </div>         </div>`)[0];
+                popup_220fcc41698ccb8db61760bc16a26f14.setContent(html_ea9139d9b095162acff653a345fd8d2e);
+            
+        
+
+        marker_e4dca25f827160f90216a95823d6356c.bindPopup(popup_220fcc41698ccb8db61760bc16a26f14)
+        ;
+
+        
+    
+    
+                marker_e4dca25f827160f90216a95823d6356c.setIcon(icon_e5eb69b6b7f867c5745c933c639ef29c);
+            
+    
+            var marker_e4fc447cc70488e131792ca7b7bf624b = L.marker(
+                [22.516997, 73.180905],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_26678a43b58df73466ac46b6042e5a50 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_16ee9ead0fee2bc69409300880b495d1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f68b562cfc15ddc5575a47ef76861eb4 = $(`<div id="html_f68b562cfc15ddc5575a47ef76861eb4" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Savli Taluka, Vadodara, Gujarat, India</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 22.516997°, 73.180905°<br>                 <b>Projected:</b> X=12772.48, Y=4035.21<br>                 <b>Reversed:</b> 22.516997°, 73.180905°             </div>         </div>         </div>`)[0];
+                popup_16ee9ead0fee2bc69409300880b495d1.setContent(html_f68b562cfc15ddc5575a47ef76861eb4);
+            
+        
+
+        marker_e4fc447cc70488e131792ca7b7bf624b.bindPopup(popup_16ee9ead0fee2bc69409300880b495d1)
+        ;
+
+        
+    
+    
+                marker_e4fc447cc70488e131792ca7b7bf624b.setIcon(icon_26678a43b58df73466ac46b6042e5a50);
+            
+    
+            var marker_c3589e58c38f45450c2dac92a752b324 = L.marker(
+                [34.466207, 93.245039],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_f4165e1ce0340bf0662ef9bd98792411 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_319c9d0fd74af2bec64bd1c19b8a93e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45cda022a95404401d754043c8bd5ebd = $(`<div id="html_45cda022a95404401d754043c8bd5ebd" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>索加乡, 治多县, 玉树藏族自治州 ཡུལ་ཤུལ་བོད་རིགས་རང་སྐྱོང་ཁུལ།, 青海省, 中国</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 34.466207°, 93.245039°<br>                 <b>Projected:</b> X=16274.33, Y=6415.00<br>                 <b>Reversed:</b> 34.466207°, 93.245039°             </div>         </div>         </div>`)[0];
+                popup_319c9d0fd74af2bec64bd1c19b8a93e8.setContent(html_45cda022a95404401d754043c8bd5ebd);
+            
+        
+
+        marker_c3589e58c38f45450c2dac92a752b324.bindPopup(popup_319c9d0fd74af2bec64bd1c19b8a93e8)
+        ;
+
+        
+    
+    
+                marker_c3589e58c38f45450c2dac92a752b324.setIcon(icon_f4165e1ce0340bf0662ef9bd98792411);
+            
+    
+            var marker_ae31f8dc03a0d0318cc633e1104ef81b = L.marker(
+                [16.654899, 86.529535],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_aa06c55e599d07fd1b985551104acaca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e1b399798638f7db52362dc05895f87 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c6dc034253a22b6d6ab6ede1f4474c2 = $(`<div id="html_8c6dc034253a22b6d6ab6ede1f4474c2" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Not found</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 16.654899°, 86.529535°<br>                 <b>Projected:</b> X=15102.25, Y=2948.65<br>                 <b>Reversed:</b> 16.654899°, 86.529535°             </div>         </div>         </div>`)[0];
+                popup_7e1b399798638f7db52362dc05895f87.setContent(html_8c6dc034253a22b6d6ab6ede1f4474c2);
+            
+        
+
+        marker_ae31f8dc03a0d0318cc633e1104ef81b.bindPopup(popup_7e1b399798638f7db52362dc05895f87)
+        ;
+
+        
+    
+    
+                marker_ae31f8dc03a0d0318cc633e1104ef81b.setIcon(icon_aa06c55e599d07fd1b985551104acaca);
+            
+    
+            var marker_305682a0dd01eef9e7e98cd2f4a0681a = L.marker(
+                [25.660136, 72.432339],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_cc6d555ebe49ef29336e39bcf492d49f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb849f422335f6ade8daf99cea473a52 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab0c9c17a0065a4e9e3b7073ba79d145 = $(`<div id="html_ab0c9c17a0065a4e9e3b7073ba79d145" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Dantala, Dewandi, Siwana Tehsil, Balotra, Rajasthan, 344044, India</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 25.660136°, 72.432339°<br>                 <b>Projected:</b> X=12641.83, Y=4636.23<br>                 <b>Reversed:</b> 25.660136°, 72.432339°             </div>         </div>         </div>`)[0];
+                popup_cb849f422335f6ade8daf99cea473a52.setContent(html_ab0c9c17a0065a4e9e3b7073ba79d145);
+            
+        
+
+        marker_305682a0dd01eef9e7e98cd2f4a0681a.bindPopup(popup_cb849f422335f6ade8daf99cea473a52)
+        ;
+
+        
+    
+    
+                marker_305682a0dd01eef9e7e98cd2f4a0681a.setIcon(icon_cc6d555ebe49ef29336e39bcf492d49f);
+            
+    
+            var marker_6e30e5ab01a51662dacb9fc1753acdd4 = L.marker(
+                [30.112813, 83.641992],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_df4373cff721110a1ba1aeb000e2e307 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17ce87d232223ad9424c08f2ad002416 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_296ca85492650c521eae928d46a2a7cb = $(`<div id="html_296ca85492650c521eae928d46a2a7cb" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>帕羊镇, 仲巴县 འབྲོང་པ་རྫོང།, 日喀则市 གཞིས་ཀ་རྩེ་གྲོང་ཁྱེར།, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 30.112813°, 83.641992°<br>                 <b>Projected:</b> X=14598.28, Y=5515.81<br>                 <b>Reversed:</b> 30.112813°, 83.641992°             </div>         </div>         </div>`)[0];
+                popup_17ce87d232223ad9424c08f2ad002416.setContent(html_296ca85492650c521eae928d46a2a7cb);
+            
+        
+
+        marker_6e30e5ab01a51662dacb9fc1753acdd4.bindPopup(popup_17ce87d232223ad9424c08f2ad002416)
+        ;
+
+        
+    
+    
+                marker_6e30e5ab01a51662dacb9fc1753acdd4.setIcon(icon_df4373cff721110a1ba1aeb000e2e307);
+            
+    
+            var marker_0237ada2633a630d90c3b855f86d961b = L.marker(
+                [30.580168, 83.380256],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_daa02206a19f5a252aecaf7e64c2a51e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc60d979259e0764557a773a9c367412 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9c0d956f9cda94c461f2957219ca4e9 = $(`<div id="html_e9c0d956f9cda94c461f2957219ca4e9" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>吉拉乡, 仲巴县 འབྲོང་པ་རྫོང།, 日喀则市 གཞིས་ཀ་རྩེ་གྲོང་ཁྱེར།, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 30.580168°, 83.380256°<br>                 <b>Projected:</b> X=14552.60, Y=5610.33<br>                 <b>Reversed:</b> 30.580168°, 83.380256°             </div>         </div>         </div>`)[0];
+                popup_bc60d979259e0764557a773a9c367412.setContent(html_e9c0d956f9cda94c461f2957219ca4e9);
+            
+        
+
+        marker_0237ada2633a630d90c3b855f86d961b.bindPopup(popup_bc60d979259e0764557a773a9c367412)
+        ;
+
+        
+    
+    
+                marker_0237ada2633a630d90c3b855f86d961b.setIcon(icon_daa02206a19f5a252aecaf7e64c2a51e);
+            
+    
+            var marker_1e6d1decd53016bb8fca7bec2e2c41ef = L.marker(
+                [8.016585, 77.400526],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_0c024804cbb064e1074057f542de2ad8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_349f19620fb4dbcca7e9932f893c9ed6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6993a4b604b7ddcc577ad9108dc2c602 = $(`<div id="html_6993a4b604b7ddcc577ad9108dc2c602" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Kanyakumari, Kanniyakumari, Tamil Nadu, 629157, India</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 8.016585°, 77.400526°<br>                 <b>Projected:</b> X=13508.94, Y=1403.75<br>                 <b>Reversed:</b> 8.016585°, 77.400526°             </div>         </div>         </div>`)[0];
+                popup_349f19620fb4dbcca7e9932f893c9ed6.setContent(html_6993a4b604b7ddcc577ad9108dc2c602);
+            
+        
+
+        marker_1e6d1decd53016bb8fca7bec2e2c41ef.bindPopup(popup_349f19620fb4dbcca7e9932f893c9ed6)
+        ;
+
+        
+    
+    
+                marker_1e6d1decd53016bb8fca7bec2e2c41ef.setIcon(icon_0c024804cbb064e1074057f542de2ad8);
+            
+    
+            var marker_eb7981b9af5de322bb1e6a02ca3f43a2 = L.marker(
+                [8.564826, 94.94386],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_ba597c7cd93ee449f5e0f32a3763c3a3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6f6e994b49776ca0912f70d9782c3dc0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87c8014cfcf1116edf037d6e26f9975d = $(`<div id="html_87c8014cfcf1116edf037d6e26f9975d" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Not found</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 8.564826°, 94.943860°<br>                 <b>Projected:</b> X=16570.83, Y=1500.44<br>                 <b>Reversed:</b> 8.564826°, 94.943860°             </div>         </div>         </div>`)[0];
+                popup_6f6e994b49776ca0912f70d9782c3dc0.setContent(html_87c8014cfcf1116edf037d6e26f9975d);
+            
+        
+
+        marker_eb7981b9af5de322bb1e6a02ca3f43a2.bindPopup(popup_6f6e994b49776ca0912f70d9782c3dc0)
+        ;
+
+        
+    
+    
+                marker_eb7981b9af5de322bb1e6a02ca3f43a2.setIcon(icon_ba597c7cd93ee449f5e0f32a3763c3a3);
+            
+    
+            var marker_ade3077c71258de4780ed492dc7a29e1 = L.marker(
+                [33.482934, 92.1183],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_583f5de876aee36993384bc599a9410b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91720aaea11f15667a32c39f51a41404 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99385cbfc1653e9b68d05fc2f8f011ba = $(`<div id="html_99385cbfc1653e9b68d05fc2f8f011ba" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>雁石坪镇 ཡན་ཤིས་ཕིན།, 安多县 ཨ་མདོ་རྫོང།, 那曲市 ནག་ཆུ་ས་ཁུལ།, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 33.482934°, 92.118300°<br>                 <b>Projected:</b> X=16077.68, Y=6208.05<br>                 <b>Reversed:</b> 33.482934°, 92.118300°             </div>         </div>         </div>`)[0];
+                popup_91720aaea11f15667a32c39f51a41404.setContent(html_99385cbfc1653e9b68d05fc2f8f011ba);
+            
+        
+
+        marker_ade3077c71258de4780ed492dc7a29e1.bindPopup(popup_91720aaea11f15667a32c39f51a41404)
+        ;
+
+        
+    
+    
+                marker_ade3077c71258de4780ed492dc7a29e1.setIcon(icon_583f5de876aee36993384bc599a9410b);
+            
+    
+            var marker_eee2521239c48437a2d52e04baabd065 = L.marker(
+                [16.91791, 69.67983],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_66fe85c18efc1ebe833da5c6a84c4c90 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3cacabfcddfe90fe31de8bf8bdb0ae6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dbeabaa51bfeb6bdfc0acc6b98716cd1 = $(`<div id="html_dbeabaa51bfeb6bdfc0acc6b98716cd1" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Not found</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 16.917910°, 69.679830°<br>                 <b>Projected:</b> X=12161.42, Y=2996.60<br>                 <b>Reversed:</b> 16.917910°, 69.679830°             </div>         </div>         </div>`)[0];
+                popup_d3cacabfcddfe90fe31de8bf8bdb0ae6.setContent(html_dbeabaa51bfeb6bdfc0acc6b98716cd1);
+            
+        
+
+        marker_eee2521239c48437a2d52e04baabd065.bindPopup(popup_d3cacabfcddfe90fe31de8bf8bdb0ae6)
+        ;
+
+        
+    
+    
+                marker_eee2521239c48437a2d52e04baabd065.setIcon(icon_66fe85c18efc1ebe833da5c6a84c4c90);
+            
+    
+            var marker_02f6447ad2df269754d4d17877c5d531 = L.marker(
+                [33.462278, 95.461534],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_2ebb853fdcaa9c16a6df95a3c0a87fa5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3b4e0688b3ac1a78131a20fbe65d50c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9cfe1577a9d342d30b2319572bca927b = $(`<div id="html_9cfe1577a9d342d30b2319572bca927b" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>སྟོད་ཚེ། 多彩乡, 治多县, 玉树藏族自治州 ཡུལ་ཤུལ་བོད་རིགས་རང་སྐྱོང་ཁུལ།, 青海省, 中国</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 33.462278°, 95.461534°<br>                 <b>Projected:</b> X=16661.18, Y=6203.73<br>                 <b>Reversed:</b> 33.462278°, 95.461534°             </div>         </div>         </div>`)[0];
+                popup_c3b4e0688b3ac1a78131a20fbe65d50c.setContent(html_9cfe1577a9d342d30b2319572bca927b);
+            
+        
+
+        marker_02f6447ad2df269754d4d17877c5d531.bindPopup(popup_c3b4e0688b3ac1a78131a20fbe65d50c)
+        ;
+
+        
+    
+    
+                marker_02f6447ad2df269754d4d17877c5d531.setIcon(icon_2ebb853fdcaa9c16a6df95a3c0a87fa5);
+            
+    
+            var marker_018d3ed6346a3d9c080e74972c0efce0 = L.marker(
+                [10.48395, 82.093723],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_9f06c189461e68f59cef1494c129fb97 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84712d6c14d4858c887dc8bfd7c13b87 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bbcfafcefd6793e3c69a165b36424623 = $(`<div id="html_bbcfafcefd6793e3c69a165b36424623" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Not found</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 10.483950°, 82.093723°<br>                 <b>Projected:</b> X=14328.06, Y=1840.09<br>                 <b>Reversed:</b> 10.483950°, 82.093723°             </div>         </div>         </div>`)[0];
+                popup_84712d6c14d4858c887dc8bfd7c13b87.setContent(html_bbcfafcefd6793e3c69a165b36424623);
+            
+        
+
+        marker_018d3ed6346a3d9c080e74972c0efce0.bindPopup(popup_84712d6c14d4858c887dc8bfd7c13b87)
+        ;
+
+        
+    
+    
+                marker_018d3ed6346a3d9c080e74972c0efce0.setIcon(icon_9f06c189461e68f59cef1494c129fb97);
+            
+    
+            var marker_954276d7862973e7b3585741b07949ca = L.marker(
+                [10.007163, 90.057463],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_b1552c9e860a1326239a165a246ca205 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_470112f7cc1f2a649a5e6fa045cd3779 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ead322940ac90c3974051b5306514c99 = $(`<div id="html_ead322940ac90c3974051b5306514c99" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Not found</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 10.007163°, 90.057463°<br>                 <b>Projected:</b> X=15717.99, Y=1755.53<br>                 <b>Reversed:</b> 10.007163°, 90.057463°             </div>         </div>         </div>`)[0];
+                popup_470112f7cc1f2a649a5e6fa045cd3779.setContent(html_ead322940ac90c3974051b5306514c99);
+            
+        
+
+        marker_954276d7862973e7b3585741b07949ca.bindPopup(popup_470112f7cc1f2a649a5e6fa045cd3779)
+        ;
+
+        
+    
+    
+                marker_954276d7862973e7b3585741b07949ca.setIcon(icon_b1552c9e860a1326239a165a246ca205);
+            
+    
+            var marker_359ec7402ab1e1c68ae4675e846c9aa9 = L.marker(
+                [30.209198, 71.723352],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_825c4690f0a1d2ff61cf09a50ddfc381 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_301aef4eb52c69b80275ce217177ac43 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_531d8b89eec087a833832da54ff023c4 = $(`<div id="html_531d8b89eec087a833832da54ff023c4" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Basti Tibba, اسلام پور, تحصیل ملتان صدر, ضلع ملتان, ملتان ڈویژن, پنجاب, پاکستان</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 30.209198°, 71.723352°<br>                 <b>Projected:</b> X=12518.09, Y=5535.27<br>                 <b>Reversed:</b> 30.209198°, 71.723352°             </div>         </div>         </div>`)[0];
+                popup_301aef4eb52c69b80275ce217177ac43.setContent(html_531d8b89eec087a833832da54ff023c4);
+            
+        
+
+        marker_359ec7402ab1e1c68ae4675e846c9aa9.bindPopup(popup_301aef4eb52c69b80275ce217177ac43)
+        ;
+
+        
+    
+    
+                marker_359ec7402ab1e1c68ae4675e846c9aa9.setIcon(icon_825c4690f0a1d2ff61cf09a50ddfc381);
+            
+    
+            var marker_f747b30d2750553d0002abd7f8eb2233 = L.marker(
+                [21.783189, 83.944304],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_633b8fac8ffe357e97fd38c28eb239fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_37a742a8a0d446eda849a61fdab7d581 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f15b0d51dc2b3d478bb62167b703914c = $(`<div id="html_f15b0d51dc2b3d478bb62167b703914c" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Badmal, Jharsuguda, Odisha, India</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 21.783189°, 83.944304°<br>                 <b>Projected:</b> X=14651.04, Y=3896.93<br>                 <b>Reversed:</b> 21.783189°, 83.944304°             </div>         </div>         </div>`)[0];
+                popup_37a742a8a0d446eda849a61fdab7d581.setContent(html_f15b0d51dc2b3d478bb62167b703914c);
+            
+        
+
+        marker_f747b30d2750553d0002abd7f8eb2233.bindPopup(popup_37a742a8a0d446eda849a61fdab7d581)
+        ;
+
+        
+    
+    
+                marker_f747b30d2750553d0002abd7f8eb2233.setIcon(icon_633b8fac8ffe357e97fd38c28eb239fb);
+            
+    
+            var marker_564b056977cda5fa99838d7021cee41b = L.marker(
+                [15.686642, 93.300558],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_f454d0fa7023f62562a3d340afff99a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40096f9e89692fdcbbdedc6a34b9fdef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6da7be1c02a4cd19953c6d79953b6e71 = $(`<div id="html_6da7be1c02a4cd19953c6d79953b6e71" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Not found</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 15.686642°, 93.300558°<br>                 <b>Projected:</b> X=16284.02, Y=2772.69<br>                 <b>Reversed:</b> 15.686642°, 93.300558°             </div>         </div>         </div>`)[0];
+                popup_40096f9e89692fdcbbdedc6a34b9fdef.setContent(html_6da7be1c02a4cd19953c6d79953b6e71);
+            
+        
+
+        marker_564b056977cda5fa99838d7021cee41b.bindPopup(popup_40096f9e89692fdcbbdedc6a34b9fdef)
+        ;
+
+        
+    
+    
+                marker_564b056977cda5fa99838d7021cee41b.setIcon(icon_f454d0fa7023f62562a3d340afff99a6);
+            
+    
+            var marker_9a9a870833fddfad7f97e2ccd104469d = L.marker(
+                [20.271, 74.142148],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_016ee011d467df584c218cfbb231dae2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8850afebcd8f73301004f1845babeb7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4a9ba9a4c5f40dd1dcba95a312427ca = $(`<div id="html_e4a9ba9a4c5f40dd1dcba95a312427ca" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Chandwad Taluka, Nashik, Maharashtra, India</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 20.271000°, 74.142148°<br>                 <b>Projected:</b> X=12940.25, Y=3614.16<br>                 <b>Reversed:</b> 20.271000°, 74.142148°             </div>         </div>         </div>`)[0];
+                popup_c8850afebcd8f73301004f1845babeb7.setContent(html_e4a9ba9a4c5f40dd1dcba95a312427ca);
+            
+        
+
+        marker_9a9a870833fddfad7f97e2ccd104469d.bindPopup(popup_c8850afebcd8f73301004f1845babeb7)
+        ;
+
+        
+    
+    
+                marker_9a9a870833fddfad7f97e2ccd104469d.setIcon(icon_016ee011d467df584c218cfbb231dae2);
+            
+    
+            var marker_8ed9aa08e3420594de7ba66d19a79358 = L.marker(
+                [23.639587, 89.168001],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_1bf832bcaa080b66c19d446735e84c49 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64200dbb46ba9736b04ea87042164c28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37ca91987f9269ffe1e501ec0dc810e3 = $(`<div id="html_37ca91987f9269ffe1e501ec0dc810e3" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>শৈলকুপা উপজেলা, ঝিনাইদহ জেলা, খুলনা বিভাগ, 7320, বাংলাদেশ</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 23.639587°, 89.168001°<br>                 <b>Projected:</b> X=15562.75, Y=4248.19<br>                 <b>Reversed:</b> 23.639587°, 89.168001°             </div>         </div>         </div>`)[0];
+                popup_64200dbb46ba9736b04ea87042164c28.setContent(html_37ca91987f9269ffe1e501ec0dc810e3);
+            
+        
+
+        marker_8ed9aa08e3420594de7ba66d19a79358.bindPopup(popup_64200dbb46ba9736b04ea87042164c28)
+        ;
+
+        
+    
+    
+                marker_8ed9aa08e3420594de7ba66d19a79358.setIcon(icon_1bf832bcaa080b66c19d446735e84c49);
+            
+    
+            var marker_a306256cd664570b0a6b097bdb960b42 = L.marker(
+                [13.833381, 77.039772],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_ed68f937b374c906b0cad8ec4f327d6d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e38b6876daba38df7ece77556b4d9aee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e63208cb99f0265c026e8ccd4917867a = $(`<div id="html_e63208cb99f0265c026e8ccd4917867a" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>MDR, Inagalore, Agali, Sri Sathya Sai, Andhra Pradesh, 515311, India</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 13.833381°, 77.039772°<br>                 <b>Projected:</b> X=13445.98, Y=2438.18<br>                 <b>Reversed:</b> 13.833381°, 77.039772°             </div>         </div>         </div>`)[0];
+                popup_e38b6876daba38df7ece77556b4d9aee.setContent(html_e63208cb99f0265c026e8ccd4917867a);
+            
+        
+
+        marker_a306256cd664570b0a6b097bdb960b42.bindPopup(popup_e38b6876daba38df7ece77556b4d9aee)
+        ;
+
+        
+    
+    
+                marker_a306256cd664570b0a6b097bdb960b42.setIcon(icon_ed68f937b374c906b0cad8ec4f327d6d);
+            
+    
+            var marker_90ddb4398c7f098683678bdc0834ae72 = L.marker(
+                [36.859331, 86.846464],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_8dccbbb407a5eb5082d4c015279532e5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9dfd853c883d68dc09ece01b05b812ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3877102415b017f1eef4c594fd047c17 = $(`<div id="html_3877102415b017f1eef4c594fd047c17" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>库拉木勒克乡 قوراملىق يېزىسى, 且末县, 巴音郭楞蒙古自治州 بايىنغولىن موڭغۇل ئاپتونوم ئوبلاستى, 新疆维吾尔自治区 شىنجاڭ ئۇيغۇر ئاپتونوم رايونی, 中国</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 36.859331°, 86.846464°<br>                 <b>Projected:</b> X=15157.57, Y=6929.17<br>                 <b>Reversed:</b> 36.859331°, 86.846464°             </div>         </div>         </div>`)[0];
+                popup_9dfd853c883d68dc09ece01b05b812ac.setContent(html_3877102415b017f1eef4c594fd047c17);
+            
+        
+
+        marker_90ddb4398c7f098683678bdc0834ae72.bindPopup(popup_9dfd853c883d68dc09ece01b05b812ac)
+        ;
+
+        
+    
+    
+                marker_90ddb4398c7f098683678bdc0834ae72.setIcon(icon_8dccbbb407a5eb5082d4c015279532e5);
+            
+    
+            var marker_64289c97a445f57187ede60c4980d17f = L.marker(
+                [20.704902, 83.009699],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_db94b37cb96e24dcdf49f84bef9bb879 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c9ca1d265597afcbde337424008b47f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d98bae7203f580b9ea69833ab8109891 = $(`<div id="html_d98bae7203f580b9ea69833ab8109891" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Patnagarh, Balangir, Odisha, India</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 20.704902°, 83.009699°<br>                 <b>Projected:</b> X=14487.93, Y=3695.01<br>                 <b>Reversed:</b> 20.704902°, 83.009699°             </div>         </div>         </div>`)[0];
+                popup_6c9ca1d265597afcbde337424008b47f.setContent(html_d98bae7203f580b9ea69833ab8109891);
+            
+        
+
+        marker_64289c97a445f57187ede60c4980d17f.bindPopup(popup_6c9ca1d265597afcbde337424008b47f)
+        ;
+
+        
+    
+    
+                marker_64289c97a445f57187ede60c4980d17f.setIcon(icon_db94b37cb96e24dcdf49f84bef9bb879);
+            
+    
+            var marker_4d71e6c0a4d456819820ca7d44212faa = L.marker(
+                [11.509122, 74.516223],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_3e8bc7c752cebe407960b4ed7ee8305e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72695d031570601683be74ea5ae05d0e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e9490f068c48483bb89c34ab7905e6a = $(`<div id="html_2e9490f068c48483bb89c34ab7905e6a" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Not found</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 11.509122°, 74.516223°<br>                 <b>Projected:</b> X=13005.53, Y=2022.37<br>                 <b>Reversed:</b> 11.509122°, 74.516223°             </div>         </div>         </div>`)[0];
+                popup_72695d031570601683be74ea5ae05d0e.setContent(html_2e9490f068c48483bb89c34ab7905e6a);
+            
+        
+
+        marker_4d71e6c0a4d456819820ca7d44212faa.bindPopup(popup_72695d031570601683be74ea5ae05d0e)
+        ;
+
+        
+    
+    
+                marker_4d71e6c0a4d456819820ca7d44212faa.setIcon(icon_3e8bc7c752cebe407960b4ed7ee8305e);
+            
+    
+            var marker_30d682d95ed9c6e16e8582b33f7ba47e = L.marker(
+                [17.804481, 85.060953],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_328274d79933a8fd9967da7d587391d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_caf70d39a43208976924c424c39b02fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74bdba2a674d78f3947ffd10ba7488d2 = $(`<div id="html_74bdba2a674d78f3947ffd10ba7488d2" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Not found</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 17.804481°, 85.060953°<br>                 <b>Projected:</b> X=14845.94, Y=3158.72<br>                 <b>Reversed:</b> 17.804481°, 85.060953°             </div>         </div>         </div>`)[0];
+                popup_caf70d39a43208976924c424c39b02fe.setContent(html_74bdba2a674d78f3947ffd10ba7488d2);
+            
+        
+
+        marker_30d682d95ed9c6e16e8582b33f7ba47e.bindPopup(popup_caf70d39a43208976924c424c39b02fe)
+        ;
+
+        
+    
+    
+                marker_30d682d95ed9c6e16e8582b33f7ba47e.setIcon(icon_328274d79933a8fd9967da7d587391d3);
+            
+    
+            var marker_b160ccaf25122af7ef851dcf58a7ee6e = L.marker(
+                [14.673327, 74.386304],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_046186883a688894a8b0c93ab4ac04ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09daef57d2d41a1a712dbd1e3be091e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_736d6f01e7b6577a42245219d60b1980 = $(`<div id="html_736d6f01e7b6577a42245219d60b1980" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Adlura, Ankola taluk, Uttara Kannada, Karnataka, 581413, India</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 14.673327°, 74.386304°<br>                 <b>Projected:</b> X=12982.86, Y=2589.44<br>                 <b>Reversed:</b> 14.673327°, 74.386304°             </div>         </div>         </div>`)[0];
+                popup_09daef57d2d41a1a712dbd1e3be091e5.setContent(html_736d6f01e7b6577a42245219d60b1980);
+            
+        
+
+        marker_b160ccaf25122af7ef851dcf58a7ee6e.bindPopup(popup_09daef57d2d41a1a712dbd1e3be091e5)
+        ;
+
+        
+    
+    
+                marker_b160ccaf25122af7ef851dcf58a7ee6e.setIcon(icon_046186883a688894a8b0c93ab4ac04ca);
+            
+    
+            var marker_ed4cb183ef4cf806cdb15479e70d877e = L.marker(
+                [10.058799, 86.301986],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_f51960e230ba90dc4db4ae3cb2aed71e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3536e7553f3db2654dc84fff25e022f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6cd70c63f28de9e875ad452d3584687e = $(`<div id="html_6cd70c63f28de9e875ad452d3584687e" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Not found</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 10.058799°, 86.301986°<br>                 <b>Projected:</b> X=15062.54, Y=1764.68<br>                 <b>Reversed:</b> 10.058799°, 86.301986°             </div>         </div>         </div>`)[0];
+                popup_3536e7553f3db2654dc84fff25e022f0.setContent(html_6cd70c63f28de9e875ad452d3584687e);
+            
+        
+
+        marker_ed4cb183ef4cf806cdb15479e70d877e.bindPopup(popup_3536e7553f3db2654dc84fff25e022f0)
+        ;
+
+        
+    
+    
+                marker_ed4cb183ef4cf806cdb15479e70d877e.setIcon(icon_f51960e230ba90dc4db4ae3cb2aed71e);
+            
+    
+            var marker_510ba738f97336c03eb88da61d437c50 = L.marker(
+                [14.639312, 94.25718],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_b35563d37cc9351ab9c727d7431c9faf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_06b2f4cd9d6014b98df811c23eae5718 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eaa8f17b0965701d62d78e91f3f413a7 = $(`<div id="html_eaa8f17b0965701d62d78e91f3f413a7" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Not found</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 14.639312°, 94.257180°<br>                 <b>Projected:</b> X=16450.98, Y=2583.30<br>                 <b>Reversed:</b> 14.639312°, 94.257180°             </div>         </div>         </div>`)[0];
+                popup_06b2f4cd9d6014b98df811c23eae5718.setContent(html_eaa8f17b0965701d62d78e91f3f413a7);
+            
+        
+
+        marker_510ba738f97336c03eb88da61d437c50.bindPopup(popup_06b2f4cd9d6014b98df811c23eae5718)
+        ;
+
+        
+    
+    
+                marker_510ba738f97336c03eb88da61d437c50.setIcon(icon_b35563d37cc9351ab9c727d7431c9faf);
+            
+    
+            var marker_2b67958a013974c28ad8e5fed9d6147e = L.marker(
+                [32.929427, 70.054863],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_2436c54f1dc935f1f178cb3fe3517655 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9226606f933e5bce64142c31b5e1dffc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d71debb93eb1645155174959d95d48ac = $(`<div id="html_d71debb93eb1645155174959d95d48ac" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>نغر, تحصیل میران شاہ, ضلع شمالی وزیرستان, بنوں ڈویژن, خیبر پختونخوا, پاکستان</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 32.929427°, 70.054863°<br>                 <b>Projected:</b> X=12226.88, Y=6092.59<br>                 <b>Reversed:</b> 32.929427°, 70.054863°             </div>         </div>         </div>`)[0];
+                popup_9226606f933e5bce64142c31b5e1dffc.setContent(html_d71debb93eb1645155174959d95d48ac);
+            
+        
+
+        marker_2b67958a013974c28ad8e5fed9d6147e.bindPopup(popup_9226606f933e5bce64142c31b5e1dffc)
+        ;
+
+        
+    
+    
+                marker_2b67958a013974c28ad8e5fed9d6147e.setIcon(icon_2436c54f1dc935f1f178cb3fe3517655);
+            
+    
+            var marker_697ae5b59afab1c6554356e8166500fc = L.marker(
+                [14.902134, 87.400356],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_27824716491cf07b3d72c4b8d8cc377d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a0d834e1cc30e9f8f9f69682865a9bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19c0f630e55ae41417283bfcfba76e4e = $(`<div id="html_19c0f630e55ae41417283bfcfba76e4e" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Not found</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 14.902134°, 87.400356°<br>                 <b>Projected:</b> X=15254.24, Y=2630.74<br>                 <b>Reversed:</b> 14.902134°, 87.400356°             </div>         </div>         </div>`)[0];
+                popup_0a0d834e1cc30e9f8f9f69682865a9bb.setContent(html_19c0f630e55ae41417283bfcfba76e4e);
+            
+        
+
+        marker_697ae5b59afab1c6554356e8166500fc.bindPopup(popup_0a0d834e1cc30e9f8f9f69682865a9bb)
+        ;
+
+        
+    
+    
+                marker_697ae5b59afab1c6554356e8166500fc.setIcon(icon_27824716491cf07b3d72c4b8d8cc377d);
+            
+    
+            var marker_980099c542dedb04cee9a0130c2f31ac = L.marker(
+                [14.212867, 71.837044],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_56f3768b357999ed9533998b1ada8c04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0e82cbaef34f048323cc55eb0274df6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a8aa514411aec9ba243a002753651ac = $(`<div id="html_2a8aa514411aec9ba243a002753651ac" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Not found</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 14.212867°, 71.837044°<br>                 <b>Projected:</b> X=12537.93, Y=2506.45<br>                 <b>Reversed:</b> 14.212867°, 71.837044°             </div>         </div>         </div>`)[0];
+                popup_a0e82cbaef34f048323cc55eb0274df6.setContent(html_2a8aa514411aec9ba243a002753651ac);
+            
+        
+
+        marker_980099c542dedb04cee9a0130c2f31ac.bindPopup(popup_a0e82cbaef34f048323cc55eb0274df6)
+        ;
+
+        
+    
+    
+                marker_980099c542dedb04cee9a0130c2f31ac.setIcon(icon_56f3768b357999ed9533998b1ada8c04);
+            
+    
+            var marker_28af232cef537e5b03d4e2b4332501e6 = L.marker(
+                [35.129913, 84.56025],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_308438056eca5d917bf842d06f6fdc3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6082ce318da951eac10065635406af41 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_903f2a0b2c6917259ee97eb370b86a39 = $(`<div id="html_903f2a0b2c6917259ee97eb370b86a39" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>察布乡, 改则县 སྒེར་རྩེ་རྫོང་།, 阿里地区 མངའ་རིས་ས་ཁུལ་, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 35.129913°, 84.560250°<br>                 <b>Projected:</b> X=14758.55, Y=6556.07<br>                 <b>Reversed:</b> 35.129913°, 84.560250°             </div>         </div>         </div>`)[0];
+                popup_6082ce318da951eac10065635406af41.setContent(html_903f2a0b2c6917259ee97eb370b86a39);
+            
+        
+
+        marker_28af232cef537e5b03d4e2b4332501e6.bindPopup(popup_6082ce318da951eac10065635406af41)
+        ;
+
+        
+    
+    
+                marker_28af232cef537e5b03d4e2b4332501e6.setIcon(icon_308438056eca5d917bf842d06f6fdc3e);
+            
+    
+            var marker_c19c6a3d49ef7b2eb5cbe9196f9d1596 = L.marker(
+                [21.70746, 90.753963],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_8a49aef216c9d5876183ec3ac2bf74ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a65b2863c502dffd4c9b019954cd259 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7974d774a8959d9b80cc70843563b479 = $(`<div id="html_7974d774a8959d9b80cc70843563b479" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>মনপুরা উপজেলা, ভোলা জেলা, বরিশাল বিভাগ, বাংলাদেশ</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 21.707460°, 90.753963°<br>                 <b>Projected:</b> X=15839.55, Y=3882.70<br>                 <b>Reversed:</b> 21.707460°, 90.753963°             </div>         </div>         </div>`)[0];
+                popup_0a65b2863c502dffd4c9b019954cd259.setContent(html_7974d774a8959d9b80cc70843563b479);
+            
+        
+
+        marker_c19c6a3d49ef7b2eb5cbe9196f9d1596.bindPopup(popup_0a65b2863c502dffd4c9b019954cd259)
+        ;
+
+        
+    
+    
+                marker_c19c6a3d49ef7b2eb5cbe9196f9d1596.setIcon(icon_8a49aef216c9d5876183ec3ac2bf74ea);
+            
+    
+            var marker_a590d76ab0d5de7c255e74c3f8f729f5 = L.marker(
+                [31.417413, 73.521888],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_db6552352f70a5b15b5670b6874794a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64711c003c98dacf979bf0c1c54271b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3551f60764fb78ec80177eae9205be1f = $(`<div id="html_3551f60764fb78ec80177eae9205be1f" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>کوٹ سرداراں, تحصیل جڑانوالہ, ضلع فیصل آباد, فیصل آباد ڈویژن, پنجاب, پاکستان</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 31.417413°, 73.521888°<br>                 <b>Projected:</b> X=12831.99, Y=5780.81<br>                 <b>Reversed:</b> 31.417413°, 73.521888°             </div>         </div>         </div>`)[0];
+                popup_64711c003c98dacf979bf0c1c54271b1.setContent(html_3551f60764fb78ec80177eae9205be1f);
+            
+        
+
+        marker_a590d76ab0d5de7c255e74c3f8f729f5.bindPopup(popup_64711c003c98dacf979bf0c1c54271b1)
+        ;
+
+        
+    
+    
+                marker_a590d76ab0d5de7c255e74c3f8f729f5.setIcon(icon_db6552352f70a5b15b5670b6874794a1);
+            
+    
+            var marker_375341eecd45c6ad7f0bad411359a307 = L.marker(
+                [10.810994, 80.500484],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_391654d9be22732d75dcd84367821353 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aacdf9376a1fe7eb17cebaf769d083b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5c1036e8878aeda8140b616c3128aef = $(`<div id="html_f5c1036e8878aeda8140b616c3128aef" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Not found</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 10.810994°, 80.500484°<br>                 <b>Projected:</b> X=14049.98, Y=1898.17<br>                 <b>Reversed:</b> 10.810994°, 80.500484°             </div>         </div>         </div>`)[0];
+                popup_aacdf9376a1fe7eb17cebaf769d083b0.setContent(html_f5c1036e8878aeda8140b616c3128aef);
+            
+        
+
+        marker_375341eecd45c6ad7f0bad411359a307.bindPopup(popup_aacdf9376a1fe7eb17cebaf769d083b0)
+        ;
+
+        
+    
+    
+                marker_375341eecd45c6ad7f0bad411359a307.setIcon(icon_391654d9be22732d75dcd84367821353);
+            
+    
+            var marker_e0883e9d899b17546a43d026120cbd62 = L.marker(
+                [20.28378, 81.543715],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_2142a68e1793c45119cef2af4406cd8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47f14296bcd1f554044d358ea3c0ca44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0904e7096800d4fb2b6353da9985d3d = $(`<div id="html_d0904e7096800d4fb2b6353da9985d3d" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>SH6, Bewarti, Kanker Tahsil, Uttar Bastar Kanker, Chhattisgarh, India</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 20.283780°, 81.543715°<br>                 <b>Projected:</b> X=14232.06, Y=3616.54<br>                 <b>Reversed:</b> 20.283780°, 81.543715°             </div>         </div>         </div>`)[0];
+                popup_47f14296bcd1f554044d358ea3c0ca44.setContent(html_d0904e7096800d4fb2b6353da9985d3d);
+            
+        
+
+        marker_e0883e9d899b17546a43d026120cbd62.bindPopup(popup_47f14296bcd1f554044d358ea3c0ca44)
+        ;
+
+        
+    
+    
+                marker_e0883e9d899b17546a43d026120cbd62.setIcon(icon_2142a68e1793c45119cef2af4406cd8d);
+            
+    
+            var marker_b38a30eef1cd49a3a7fc41e4ede01722 = L.marker(
+                [29.1432, 87.527572],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_dc46b3c4add1cc23be152d72777afb6c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a9100a37d764a4218a13556d8a2f00a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ffd39359757802ef49bb877b1f7f54f1 = $(`<div id="html_ffd39359757802ef49bb877b1f7f54f1" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>叶孜线, 查务乡, 拉孜县 ལྷ་རྩེ་རྫོང།, 日喀则市 གཞིས་ཀ་རྩེ་གྲོང་ཁྱེར།, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 858100, 中国</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 29.143200°, 87.527572°<br>                 <b>Projected:</b> X=15276.44, Y=5321.12<br>                 <b>Reversed:</b> 29.143200°, 87.527572°             </div>         </div>         </div>`)[0];
+                popup_a9100a37d764a4218a13556d8a2f00a4.setContent(html_ffd39359757802ef49bb877b1f7f54f1);
+            
+        
+
+        marker_b38a30eef1cd49a3a7fc41e4ede01722.bindPopup(popup_a9100a37d764a4218a13556d8a2f00a4)
+        ;
+
+        
+    
+    
+                marker_b38a30eef1cd49a3a7fc41e4ede01722.setIcon(icon_dc46b3c4add1cc23be152d72777afb6c);
+            
+    
+            var marker_54c8f7b01fbb3bbf645da67550fac026 = L.marker(
+                [36.540791, 70.854118],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_a292cedc1d331670c4af9684b32b031d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad3a420d2356da92a99da79ca1d2e7b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8779ac0268a40d4b7789120a8b3f630 = $(`<div id="html_d8779ac0268a40d4b7789120a8b3f630" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>نلویج, ولسوالی یمگان, ولایت بدخشان, افغانستان</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 36.540791°, 70.854118°<br>                 <b>Projected:</b> X=12366.38, Y=6859.83<br>                 <b>Reversed:</b> 36.540791°, 70.854118°             </div>         </div>         </div>`)[0];
+                popup_ad3a420d2356da92a99da79ca1d2e7b7.setContent(html_d8779ac0268a40d4b7789120a8b3f630);
+            
+        
+
+        marker_54c8f7b01fbb3bbf645da67550fac026.bindPopup(popup_ad3a420d2356da92a99da79ca1d2e7b7)
+        ;
+
+        
+    
+    
+                marker_54c8f7b01fbb3bbf645da67550fac026.setIcon(icon_a292cedc1d331670c4af9684b32b031d);
+            
+    
+            var marker_4568061f49c501a7b33bd88060ec9c8f = L.marker(
+                [19.676017, 77.839776],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_8f13cd58389cb089877b23f12eac41ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0aeeb26403dbe47f87b9563e7544c58a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03f133fcd432e59140e874d1c30500fd = $(`<div id="html_03f133fcd432e59140e874d1c30500fd" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Ningnoor Jahangir Mahadewwadi, Umarkhed, Yavatmal, Maharashtra, India</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 19.676017°, 77.839776°<br>                 <b>Projected:</b> X=13585.60, Y=3503.67<br>                 <b>Reversed:</b> 19.676017°, 77.839776°             </div>         </div>         </div>`)[0];
+                popup_0aeeb26403dbe47f87b9563e7544c58a.setContent(html_03f133fcd432e59140e874d1c30500fd);
+            
+        
+
+        marker_4568061f49c501a7b33bd88060ec9c8f.bindPopup(popup_0aeeb26403dbe47f87b9563e7544c58a)
+        ;
+
+        
+    
+    
+                marker_4568061f49c501a7b33bd88060ec9c8f.setIcon(icon_8f13cd58389cb089877b23f12eac41ae);
+            
+    
+            var marker_63223f1dc5137fb0fca0aa417469f829 = L.marker(
+                [35.6895, 139.767],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_da00b9a9086ffc0995227123d566ef8e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d816622db3577b2b4130a667b192613c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f9eb1808173a3ad4b4b99fbb4e20d8ff = $(`<div id="html_f9eb1808173a3ad4b4b99fbb4e20d8ff" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>外堀通り, 内神田二丁目, 内神田, 千代田区, 東京都, 102-0000, 日本</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 35.689500°, 139.767000°<br>                 <b>Projected:</b> X=24393.94, Y=6675.90<br>                 <b>Reversed:</b> 35.689500°, 139.767000°             </div>         </div>         </div>`)[0];
+                popup_d816622db3577b2b4130a667b192613c.setContent(html_f9eb1808173a3ad4b4b99fbb4e20d8ff);
+            
+        
+
+        marker_63223f1dc5137fb0fca0aa417469f829.bindPopup(popup_d816622db3577b2b4130a667b192613c)
+        ;
+
+        
+    
+    
+                marker_63223f1dc5137fb0fca0aa417469f829.setIcon(icon_da00b9a9086ffc0995227123d566ef8e);
+            
+    
+            var marker_0c400b5462aa750f41f99a9866fc5f3e = L.marker(
+                [34.6937, 135.5022],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_cd51cf551d7b8c1b1bdb326388e8b583 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cfffe4d5ab04d5ee481d85d7a39f5f17 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2eb30a4732bfb18ed51a03a42b6c6f71 = $(`<div id="html_2eb30a4732bfb18ed51a03a42b6c6f71" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>大阪市役所, 20, 中之島一丁目, 北区, 大阪市, 大阪府, 530-8201, 日本</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 34.693700°, 135.502200°<br>                 <b>Projected:</b> X=23649.60, Y=6463.23<br>                 <b>Reversed:</b> 34.693700°, 135.502200°             </div>         </div>         </div>`)[0];
+                popup_cfffe4d5ab04d5ee481d85d7a39f5f17.setContent(html_2eb30a4732bfb18ed51a03a42b6c6f71);
+            
+        
+
+        marker_0c400b5462aa750f41f99a9866fc5f3e.bindPopup(popup_cfffe4d5ab04d5ee481d85d7a39f5f17)
+        ;
+
+        
+    
+    
+                marker_0c400b5462aa750f41f99a9866fc5f3e.setIcon(icon_cd51cf551d7b8c1b1bdb326388e8b583);
+            
+    
+            var marker_e0f1be543558a689f60e441533c91dfb = L.marker(
+                [33.5903, 130.4017],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_e464f32cfb2a547d12395baa4be03f94 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b67257e03833ba3a20a6fd5357c874b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4df7029645d78555b9df42b99cae428 = $(`<div id="html_a4df7029645d78555b9df42b99cae428" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>福岡市役所, 8番1号, 天神一丁目, 中央区, 福岡市, 福岡県, 810-8620, 日本</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 33.590300°, 130.401700°<br>                 <b>Projected:</b> X=22759.39, Y=6230.54<br>                 <b>Reversed:</b> 33.590300°, 130.401700°             </div>         </div>         </div>`)[0];
+                popup_b67257e03833ba3a20a6fd5357c874b1.setContent(html_a4df7029645d78555b9df42b99cae428);
+            
+        
+
+        marker_e0f1be543558a689f60e441533c91dfb.bindPopup(popup_b67257e03833ba3a20a6fd5357c874b1)
+        ;
+
+        
+    
+    
+                marker_e0f1be543558a689f60e441533c91dfb.setIcon(icon_e464f32cfb2a547d12395baa4be03f94);
+            
+    
+            var marker_426c4183d7ae7936de95cf2c84b21c39 = L.marker(
+                [90.0, 90.0],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_30f83996d9d415886e08f048de664849 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_591c365b6f49965e92e5e327c74c622c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca6ca92f063838607e22d2df5d334995 = $(`<div id="html_ca6ca92f063838607e22d2df5d334995" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Not found</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 90.000000°, 90.000000°<br>                 <b>Projected:</b> X=15707.96, Y=70439.59<br>                 <b>Reversed:</b> 89.900000°, 90.000000°             </div>         </div>         </div>`)[0];
+                popup_591c365b6f49965e92e5e327c74c622c.setContent(html_ca6ca92f063838607e22d2df5d334995);
+            
+        
+
+        marker_426c4183d7ae7936de95cf2c84b21c39.bindPopup(popup_591c365b6f49965e92e5e327c74c622c)
+        ;
+
+        
+    
+    
+                marker_426c4183d7ae7936de95cf2c84b21c39.setIcon(icon_30f83996d9d415886e08f048de664849);
+            
+    
+            var marker_a82080d3665b0f17820462d5ea462357 = L.marker(
+                [80.0, 90.0],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_04f6b9e3edae8b07e3a9d26ca1509cac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_89d6908b30c13f9747913bbd30735b1e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28a83dea9eae9f891d5f392883f9bfe0 = $(`<div id="html_28a83dea9eae9f891d5f392883f9bfe0" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>городское поселение Диксон, Таймырский Долгано-Ненецкий район, Красноярский край, Сибирский федеральный округ, Россия</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 80.000000°, 90.000000°<br>                 <b>Projected:</b> X=15707.96, Y=24362.46<br>                 <b>Reversed:</b> 80.000000°, 90.000000°             </div>         </div>         </div>`)[0];
+                popup_89d6908b30c13f9747913bbd30735b1e.setContent(html_28a83dea9eae9f891d5f392883f9bfe0);
+            
+        
+
+        marker_a82080d3665b0f17820462d5ea462357.bindPopup(popup_89d6908b30c13f9747913bbd30735b1e)
+        ;
+
+        
+    
+    
+                marker_a82080d3665b0f17820462d5ea462357.setIcon(icon_04f6b9e3edae8b07e3a9d26ca1509cac);
+            
+    
+            var marker_968e47d4d59a0eebc7ba75ac144e06d7 = L.marker(
+                [40.0, 50.0],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_bb8e1f238d99dafdca5bc1f62684eebc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85745843ab601087f8cf782e62195bc2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a249de134794777525d88bed6e4ca893 = $(`<div id="html_a249de134794777525d88bed6e4ca893" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>Not found</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 40.000000°, 50.000000°<br>                 <b>Projected:</b> X=8726.65, Y=7629.10<br>                 <b>Reversed:</b> 40.000000°, 50.000000°             </div>         </div>         </div>`)[0];
+                popup_85745843ab601087f8cf782e62195bc2.setContent(html_a249de134794777525d88bed6e4ca893);
+            
+        
+
+        marker_968e47d4d59a0eebc7ba75ac144e06d7.bindPopup(popup_85745843ab601087f8cf782e62195bc2)
+        ;
+
+        
+    
+    
+                marker_968e47d4d59a0eebc7ba75ac144e06d7.setIcon(icon_bb8e1f238d99dafdca5bc1f62684eebc);
+            
+    
+            var marker_f23698bc4f8487e190af7ab9510f8965 = L.marker(
+                [80.0, 90.0],
+                {
+}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            var icon_cffc164fa01f02d7ec10d5fa2e2edca7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_597caa0566d0a45dcc6f63684663d809 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc6ceb5d9a3cddaf33e1fc96593ccfec = $(`<div id="html_fc6ceb5d9a3cddaf33e1fc96593ccfec" style="width: 100.0%; height: 100.0%;">         <div style="width:250px">             <b>городское поселение Диксон, Таймырский Долгано-Ненецкий район, Красноярский край, Сибирский федеральный округ, Россия</b><hr>             <div style="font-size:12px">                 <b>Original:</b> 80.000000°, 90.000000°<br>                 <b>Projected:</b> X=15707.96, Y=24362.46<br>                 <b>Reversed:</b> 80.000000°, 90.000000°             </div>         </div>         </div>`)[0];
+                popup_597caa0566d0a45dcc6f63684663d809.setContent(html_fc6ceb5d9a3cddaf33e1fc96593ccfec);
+            
+        
+
+        marker_f23698bc4f8487e190af7ab9510f8965.bindPopup(popup_597caa0566d0a45dcc6f63684663d809)
+        ;
+
+        
+    
+    
+                marker_f23698bc4f8487e190af7ab9510f8965.setIcon(icon_cffc164fa01f02d7ec10d5fa2e2edca7);
+            
+    
+            var poly_line_14b0985483b24255d1ddc611c3bb1c37 = L.polyline(
+                [[35.6895, 139.767], [8.33295, 88.900933], [27.769601, 83.57214], [15.737931, 86.587892], [11.235013, 80.608192], [21.157987, 95.660662], [33.399735, 75.638282], [22.516997, 73.180905], [34.466207, 93.245039], [16.654899, 86.529535], [25.660136, 72.432339], [30.112813, 83.641992], [30.580168, 83.380256], [8.016585, 77.400526], [8.564826, 94.94386], [33.482934, 92.1183], [16.91791, 69.67983], [33.462278, 95.461534], [10.48395, 82.093723], [10.007163, 90.057463], [30.209198, 71.723352], [21.783189, 83.944304], [15.686642, 93.300558], [20.271, 74.142148], [23.639587, 89.168001], [13.833381, 77.039772], [36.859331, 86.846464], [20.704902, 83.009699], [11.509122, 74.516223], [17.804481, 85.060953], [14.673327, 74.386304], [10.058799, 86.301986], [14.639312, 94.25718], [32.929427, 70.054863], [14.902134, 87.400356], [14.212867, 71.837044], [35.129913, 84.56025], [21.70746, 90.753963], [31.417413, 73.521888], [10.810994, 80.500484], [20.28378, 81.543715], [29.1432, 87.527572], [36.540791, 70.854118], [19.676017, 77.839776], [35.6895, 139.767], [34.6937, 135.5022], [33.5903, 130.4017], [90.0, 90.0], [80.0, 90.0], [40.0, 50.0], [80.0, 90.0]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(feature_group_748066d970a938f3ec3f953684be2263);
+        
+    
+            feature_group_748066d970a938f3ec3f953684be2263.addTo(map_2860d73a0533ecbd72315f5c3dc19339);
+        
+    
+            var mouse_position_a048639a1477788ddf3af67a25700ec2 = new L.Control.MousePosition(
+                {
+  "position": "bottomleft",
+  "separator": " : ",
+  "emptyString": "Unavailable",
+  "lngFirst": false,
+  "numDigits": 5,
+  "prefix": "",
+}
+            );
+            mouse_position_a048639a1477788ddf3af67a25700ec2.options["latFormatter"] =
+                undefined;
+            mouse_position_a048639a1477788ddf3af67a25700ec2.options["lngFormatter"] =
+                undefined;
+            map_2860d73a0533ecbd72315f5c3dc19339.addControl(mouse_position_a048639a1477788ddf3af67a25700ec2);
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topright",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_2860d73a0533ecbd72315f5c3dc19339);
+        
+    
+            var layer_control_d937ae87a805b0a6eec5a0f1fbf81841_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f6fb99df8c7a7aa58bdfce7e1201b53b,
+                    "3D Terrain" : tile_layer_93c449844bf160adcc1b02dabe631ef0,
+                },
+                overlays :  {
+                    "Coordinates" : feature_group_748066d970a938f3ec3f953684be2263,
+                },
+            };
+            let layer_control_d937ae87a805b0a6eec5a0f1fbf81841 = L.control.layers(
+                layer_control_d937ae87a805b0a6eec5a0f1fbf81841_layers.base_layers,
+                layer_control_d937ae87a805b0a6eec5a0f1fbf81841_layers.overlays,
+                {
+  "position": "topleft",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_2860d73a0533ecbd72315f5c3dc19339);
+
+        
+</script>
+</html>

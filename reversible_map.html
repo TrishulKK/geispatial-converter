@@ -1,0 +1,4180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2348e34f1ca557cc571eb568b8bd2c67 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-groupedlayercontrol/0.6.1/leaflet.groupedlayercontrol.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-groupedlayercontrol/0.6.1/leaflet.groupedlayercontrol.min.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2348e34f1ca557cc571eb568b8bd2c67" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2348e34f1ca557cc571eb568b8bd2c67 = L.map(
+                "map_2348e34f1ca557cc571eb568b8bd2c67",
+                {
+                    center: [22.75898757692308, 80.44237590384616],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_2348e34f1ca557cc571eb568b8bd2c67);
+
+            
+
+        
+    
+            var tile_layer_6f7d2bbb325f6b8294855f48d13396f4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6f7d2bbb325f6b8294855f48d13396f4.addTo(map_2348e34f1ca557cc571eb568b8bd2c67);
+        
+    
+            var tile_layer_6d6e41011b840a7a9f9910e206387db1 = L.tileLayer(
+                "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "OpenTopoMap",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6d6e41011b840a7a9f9910e206387db1.addTo(map_2348e34f1ca557cc571eb568b8bd2c67);
+        
+    
+            var tile_layer_d32eee5de64ad6a9752f10830f6df552 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "OSM",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d32eee5de64ad6a9752f10830f6df552.addTo(map_2348e34f1ca557cc571eb568b8bd2c67);
+        
+    
+            var feature_group_6fe238015d0d2481c1ff76a5a2bc34e6 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_0c8382f14e595ea60c824d4b9d8006fb = L.marker(
+                [26.543377, 68.725312],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_6e0f71b1ee932d425920a5b9922ebda7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e1311bd099bf596eed0b5985e7dbf5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_878df51d95fef6f683524010cd528d02 = $(`<div id="html_878df51d95fef6f683524010cd528d02" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 26.543377°<br>Lon: 68.725312°<br>             X: 11994.83<br>Y: 4807.89<br>             Address: تعلقہ دوڑ, ضلع شہید بینظیر آباد, شہید بینظیر آباد ڈویژن, پاکستان         </div>         </div>`)[0];
+                popup_5e1311bd099bf596eed0b5985e7dbf5c.setContent(html_878df51d95fef6f683524010cd528d02);
+            
+        
+
+        marker_0c8382f14e595ea60c824d4b9d8006fb.bindPopup(popup_5e1311bd099bf596eed0b5985e7dbf5c)
+        ;
+
+        
+    
+    
+                marker_0c8382f14e595ea60c824d4b9d8006fb.setIcon(icon_6e0f71b1ee932d425920a5b9922ebda7);
+            
+    
+            var marker_b3e2e1834fff9a131713fe02004e17ca = L.marker(
+                [15.97585, 74.473111],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_893d2bd63d382a250ffd35ffda33969c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b143b443bf0d18f3f5a66a20f628915a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29dafd4e5f9fb6dcbfb621e945b63439 = $(`<div id="html_29dafd4e5f9fb6dcbfb621e945b63439" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 15.975850°<br>Lon: 74.473111°<br>             X: 12998.01<br>Y: 2825.16<br>             Address: Mannikeri, Belagavi taluku, Belagavi, Karnataka, 591143, India         </div>         </div>`)[0];
+                popup_b143b443bf0d18f3f5a66a20f628915a.setContent(html_29dafd4e5f9fb6dcbfb621e945b63439);
+            
+        
+
+        marker_b3e2e1834fff9a131713fe02004e17ca.bindPopup(popup_b143b443bf0d18f3f5a66a20f628915a)
+        ;
+
+        
+    
+    
+                marker_b3e2e1834fff9a131713fe02004e17ca.setIcon(icon_893d2bd63d382a250ffd35ffda33969c);
+            
+    
+            var marker_a2e5595d114c77500b8f6d4cfdc9938a = L.marker(
+                [29.357665, 87.624285],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_76e7943c62df6b860e7b70073c3293d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82e423f116db80e07b746cbea9cb5fac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13f78ed9f3a3471e5d3c124f8bd12914 = $(`<div id="html_13f78ed9f3a3471e5d3c124f8bd12914" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 29.357665°<br>Lon: 87.624285°<br>             X: 15293.32<br>Y: 5364.02<br>             Address: 达居乡, 昂仁县 ངམ་རིང་རྫོང།, 日喀则市 གཞིས་ཀ་རྩེ་གྲོང་ཁྱེར།, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国         </div>         </div>`)[0];
+                popup_82e423f116db80e07b746cbea9cb5fac.setContent(html_13f78ed9f3a3471e5d3c124f8bd12914);
+            
+        
+
+        marker_a2e5595d114c77500b8f6d4cfdc9938a.bindPopup(popup_82e423f116db80e07b746cbea9cb5fac)
+        ;
+
+        
+    
+    
+                marker_a2e5595d114c77500b8f6d4cfdc9938a.setIcon(icon_76e7943c62df6b860e7b70073c3293d3);
+            
+    
+            var marker_fe9941909b5a6222d6b18794f3f02494 = L.marker(
+                [33.873207, 70.521226],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_828d099213b586332c1a41948f5b3b2d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8c90507418e1ad00ce1b497385ec9be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d19138d4605d5016521cb22aed70183 = $(`<div id="html_2d19138d4605d5016521cb22aed70183" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 33.873207°<br>Lon: 70.521226°<br>             X: 12308.28<br>Y: 6289.91<br>             Address: Garibal, تحصیل لنڈی کوتل, ضلع خیبر, پشاور ڈویژن, خیبر پختونخوا, پاکستان         </div>         </div>`)[0];
+                popup_d8c90507418e1ad00ce1b497385ec9be.setContent(html_2d19138d4605d5016521cb22aed70183);
+            
+        
+
+        marker_fe9941909b5a6222d6b18794f3f02494.bindPopup(popup_d8c90507418e1ad00ce1b497385ec9be)
+        ;
+
+        
+    
+    
+                marker_fe9941909b5a6222d6b18794f3f02494.setIcon(icon_828d099213b586332c1a41948f5b3b2d);
+            
+    
+            var marker_0a6eb2da6c226c44aa29f7204278927e = L.marker(
+                [20.235733, 68.864119],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_5bd363c60d629e670fa497cb21fd3b94 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a116f0bdcda3b74e4090c7b02273fc70 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7c79eeafc23ad327351a8a2f0812668 = $(`<div id="html_d7c79eeafc23ad327351a8a2f0812668" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 20.235733°<br>Lon: 68.864119°<br>             X: 12019.06<br>Y: 3607.60<br>             Address: Not found         </div>         </div>`)[0];
+                popup_a116f0bdcda3b74e4090c7b02273fc70.setContent(html_d7c79eeafc23ad327351a8a2f0812668);
+            
+        
+
+        marker_0a6eb2da6c226c44aa29f7204278927e.bindPopup(popup_a116f0bdcda3b74e4090c7b02273fc70)
+        ;
+
+        
+    
+    
+                marker_0a6eb2da6c226c44aa29f7204278927e.setIcon(icon_5bd363c60d629e670fa497cb21fd3b94);
+            
+    
+            var marker_2550e8ef1e764691c027039fe0088638 = L.marker(
+                [14.340501, 82.655303],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_e92b77039ec08384b2a3a6fbbb3b5023 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e7c0f62355ce8a6205469daec8385f64 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_24386378c51122958ac598d00d5ca1c6 = $(`<div id="html_24386378c51122958ac598d00d5ca1c6" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 14.340501°<br>Lon: 82.655303°<br>             X: 14426.07<br>Y: 2529.44<br>             Address: Not found         </div>         </div>`)[0];
+                popup_e7c0f62355ce8a6205469daec8385f64.setContent(html_24386378c51122958ac598d00d5ca1c6);
+            
+        
+
+        marker_2550e8ef1e764691c027039fe0088638.bindPopup(popup_e7c0f62355ce8a6205469daec8385f64)
+        ;
+
+        
+    
+    
+                marker_2550e8ef1e764691c027039fe0088638.setIcon(icon_e92b77039ec08384b2a3a6fbbb3b5023);
+            
+    
+            var marker_c79198e9ee9c64c7fc6a4ec1dc895c19 = L.marker(
+                [8.769543, 73.766292],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_872429daaacb36204cc280520b4112a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ca76a453e3ad8abb17bed6989672a16 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b3b8140ff9537509bbab06f340b5e74 = $(`<div id="html_9b3b8140ff9537509bbab06f340b5e74" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 8.769543°<br>Lon: 73.766292°<br>             X: 12874.65<br>Y: 1536.59<br>             Address: Not found         </div>         </div>`)[0];
+                popup_6ca76a453e3ad8abb17bed6989672a16.setContent(html_9b3b8140ff9537509bbab06f340b5e74);
+            
+        
+
+        marker_c79198e9ee9c64c7fc6a4ec1dc895c19.bindPopup(popup_6ca76a453e3ad8abb17bed6989672a16)
+        ;
+
+        
+    
+    
+                marker_c79198e9ee9c64c7fc6a4ec1dc895c19.setIcon(icon_872429daaacb36204cc280520b4112a2);
+            
+    
+            var marker_7726d8da7d79223bc181bf8034edc453 = L.marker(
+                [26.846649, 83.803303],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_caede230f9acd673f243257d82864976 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f0d57f17d4bc5da593f6f451d5b7b3a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fd5ccfa2343e3f6a537986f63ac45cd = $(`<div id="html_9fd5ccfa2343e3f6a537986f63ac45cd" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 26.846649°<br>Lon: 83.803303°<br>             X: 14626.44<br>Y: 4867.14<br>             Address: Kasya, Kushinagar, Uttar Pradesh, India         </div>         </div>`)[0];
+                popup_5f0d57f17d4bc5da593f6f451d5b7b3a.setContent(html_9fd5ccfa2343e3f6a537986f63ac45cd);
+            
+        
+
+        marker_7726d8da7d79223bc181bf8034edc453.bindPopup(popup_5f0d57f17d4bc5da593f6f451d5b7b3a)
+        ;
+
+        
+    
+    
+                marker_7726d8da7d79223bc181bf8034edc453.setIcon(icon_caede230f9acd673f243257d82864976);
+            
+    
+            var marker_ad4d13de62b51811c50fcb1676c31ee0 = L.marker(
+                [14.392778, 85.088705],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_441e1a1eae3475c155f07c4fa50db9f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d02e97e0e1f8cbf1464930efbfa0fc2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_700799485aae3dedbcba613d7d448860 = $(`<div id="html_700799485aae3dedbcba613d7d448860" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 14.392778°<br>Lon: 85.088705°<br>             X: 14850.78<br>Y: 2538.86<br>             Address: Not found         </div>         </div>`)[0];
+                popup_5d02e97e0e1f8cbf1464930efbfa0fc2.setContent(html_700799485aae3dedbcba613d7d448860);
+            
+        
+
+        marker_ad4d13de62b51811c50fcb1676c31ee0.bindPopup(popup_5d02e97e0e1f8cbf1464930efbfa0fc2)
+        ;
+
+        
+    
+    
+                marker_ad4d13de62b51811c50fcb1676c31ee0.setIcon(icon_441e1a1eae3475c155f07c4fa50db9f7);
+            
+    
+            var marker_72e4d23898012be3acda40991a5b09c2 = L.marker(
+                [31.473483, 68.188464],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_8d929fc49b6e9e3aa55ab1757a14d7f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_304802eaee84de56b7971b1e5c05f9fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a80d594c729e2a08cd6816aa01bc2dc9 = $(`<div id="html_a80d594c729e2a08cd6816aa01bc2dc9" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 31.473483°<br>Lon: 68.188464°<br>             X: 11901.13<br>Y: 5792.28<br>             Address: تحصیل کاکڑ خراسان, ضلع ژوب, ژوب ڈویژن, پاکستان         </div>         </div>`)[0];
+                popup_304802eaee84de56b7971b1e5c05f9fe.setContent(html_a80d594c729e2a08cd6816aa01bc2dc9);
+            
+        
+
+        marker_72e4d23898012be3acda40991a5b09c2.bindPopup(popup_304802eaee84de56b7971b1e5c05f9fe)
+        ;
+
+        
+    
+    
+                marker_72e4d23898012be3acda40991a5b09c2.setIcon(icon_8d929fc49b6e9e3aa55ab1757a14d7f5);
+            
+    
+            var marker_cb603ed5d997f4d6182ab5f356041dad = L.marker(
+                [31.368758, 88.246042],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_9cb94b94904e0f0d597fb7515d7ec8b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e050cd367d331b82c4290ec6c480ef66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_66406d7be52ffbae32eacc8625246b26 = $(`<div id="html_66406d7be52ffbae32eacc8625246b26" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 31.368758°<br>Lon: 88.246042°<br>             X: 15401.84<br>Y: 5770.86<br>             Address: 申扎镇, 申扎县 ཤན་རྩ་རྫོང།, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国         </div>         </div>`)[0];
+                popup_e050cd367d331b82c4290ec6c480ef66.setContent(html_66406d7be52ffbae32eacc8625246b26);
+            
+        
+
+        marker_cb603ed5d997f4d6182ab5f356041dad.bindPopup(popup_e050cd367d331b82c4290ec6c480ef66)
+        ;
+
+        
+    
+    
+                marker_cb603ed5d997f4d6182ab5f356041dad.setIcon(icon_9cb94b94904e0f0d597fb7515d7ec8b1);
+            
+    
+            var marker_4262545969b58e94b595c2309817fea1 = L.marker(
+                [17.867265, 72.508905],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_2d01d2c3cc8e5fe8a7ce4b91a4d7bf43 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a9d7cdac1c0120b75563a55538bf15b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20e349e8398044629458c9670d0673a0 = $(`<div id="html_20e349e8398044629458c9670d0673a0" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 17.867265°<br>Lon: 72.508905°<br>             X: 12655.19<br>Y: 3170.23<br>             Address: Not found         </div>         </div>`)[0];
+                popup_5a9d7cdac1c0120b75563a55538bf15b.setContent(html_20e349e8398044629458c9670d0673a0);
+            
+        
+
+        marker_4262545969b58e94b595c2309817fea1.bindPopup(popup_5a9d7cdac1c0120b75563a55538bf15b)
+        ;
+
+        
+    
+    
+                marker_4262545969b58e94b595c2309817fea1.setIcon(icon_2d01d2c3cc8e5fe8a7ce4b91a4d7bf43);
+            
+    
+            var marker_9eb273c82f164136c9c5cdc9dd3c1a3f = L.marker(
+                [35.759179, 77.761242],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_3039752c0801fa5ee7de084ef8cc6607 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_768054d45552da19948a3972c06b2b1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56c760f7fd40587ae13e5defe0f4c343 = $(`<div id="html_56c760f7fd40587ae13e5defe0f4c343" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 35.759179°<br>Lon: 77.761242°<br>             X: 13571.90<br>Y: 6690.88<br>             Address: 叶城县 قاغىلىق ناھىيىسى, 喀什地区 قەشقەر ۋىلايىتى, 新疆维吾尔自治区 شىنجاڭ ئۇيغۇر ئاپتونوم رايونی, 844900, 中国         </div>         </div>`)[0];
+                popup_768054d45552da19948a3972c06b2b1f.setContent(html_56c760f7fd40587ae13e5defe0f4c343);
+            
+        
+
+        marker_9eb273c82f164136c9c5cdc9dd3c1a3f.bindPopup(popup_768054d45552da19948a3972c06b2b1f)
+        ;
+
+        
+    
+    
+                marker_9eb273c82f164136c9c5cdc9dd3c1a3f.setIcon(icon_3039752c0801fa5ee7de084ef8cc6607);
+            
+    
+            var marker_efa147833dddd27281303000aeef9cc5 = L.marker(
+                [10.689629, 70.804775],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_9991046e88e1eb6285885658b178c61b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_515c4403bced8e2210106aac8ddccae8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7065ca87cb24d43bebe751aa8e3e33b = $(`<div id="html_d7065ca87cb24d43bebe751aa8e3e33b" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 10.689629°<br>Lon: 70.804775°<br>             X: 12357.76<br>Y: 1876.61<br>             Address: Not found         </div>         </div>`)[0];
+                popup_515c4403bced8e2210106aac8ddccae8.setContent(html_d7065ca87cb24d43bebe751aa8e3e33b);
+            
+        
+
+        marker_efa147833dddd27281303000aeef9cc5.bindPopup(popup_515c4403bced8e2210106aac8ddccae8)
+        ;
+
+        
+    
+    
+                marker_efa147833dddd27281303000aeef9cc5.setIcon(icon_9991046e88e1eb6285885658b178c61b);
+            
+    
+            var marker_a9d106a814b1dccdbc27ef16a6a0b8d5 = L.marker(
+                [32.577337, 85.508055],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_8bc961457d2beb188b98fa6998c8efae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb9bd3fd719607b85abef9d5ed1ffb63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e55ccb18d103c84fc21ce55755293444 = $(`<div id="html_e55ccb18d103c84fc21ce55755293444" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 32.577337°<br>Lon: 85.508055°<br>             X: 14923.97<br>Y: 6019.53<br>             Address: 中仓乡, 尼玛县 ཉི་མ་རྫོང།, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国         </div>         </div>`)[0];
+                popup_bb9bd3fd719607b85abef9d5ed1ffb63.setContent(html_e55ccb18d103c84fc21ce55755293444);
+            
+        
+
+        marker_a9d106a814b1dccdbc27ef16a6a0b8d5.bindPopup(popup_bb9bd3fd719607b85abef9d5ed1ffb63)
+        ;
+
+        
+    
+    
+                marker_a9d106a814b1dccdbc27ef16a6a0b8d5.setIcon(icon_8bc961457d2beb188b98fa6998c8efae);
+            
+    
+            var marker_e55b2b4fb1d13a425736efdd98666400 = L.marker(
+                [31.40672, 89.162222],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_4e2e047fa557e297949efe810f611368 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5b1991dc3c983a3db04b139911af984 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_498ec8b00b70dc10e6335ac0c7729310 = $(`<div id="html_498ec8b00b70dc10e6335ac0c7729310" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 31.406720°<br>Lon: 89.162222°<br>             X: 15561.74<br>Y: 5778.62<br>             Address: 雄梅镇, 申扎县 ཤན་རྩ་རྫོང།, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国         </div>         </div>`)[0];
+                popup_c5b1991dc3c983a3db04b139911af984.setContent(html_498ec8b00b70dc10e6335ac0c7729310);
+            
+        
+
+        marker_e55b2b4fb1d13a425736efdd98666400.bindPopup(popup_c5b1991dc3c983a3db04b139911af984)
+        ;
+
+        
+    
+    
+                marker_e55b2b4fb1d13a425736efdd98666400.setIcon(icon_4e2e047fa557e297949efe810f611368);
+            
+    
+            var marker_589623c4d0b8bbcebc751a80155bc599 = L.marker(
+                [23.550615, 96.220357],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_4b89691f96adc338df6f31b6154d52f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b47ddbf0ae45fd33f06374f697cf06b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c03d647f2ade342b4f68e9b7e5972475 = $(`<div id="html_c03d647f2ade342b4f68e9b7e5972475" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 23.550615°<br>Lon: 96.220357°<br>             X: 16793.62<br>Y: 4231.24<br>             Address: ပြင်ဦးလွင်ခရိုင်, သပိတ်ကျင်းခရိုင်, မန္တလေးတိုင်း, မြန်မာ         </div>         </div>`)[0];
+                popup_b47ddbf0ae45fd33f06374f697cf06b7.setContent(html_c03d647f2ade342b4f68e9b7e5972475);
+            
+        
+
+        marker_589623c4d0b8bbcebc751a80155bc599.bindPopup(popup_b47ddbf0ae45fd33f06374f697cf06b7)
+        ;
+
+        
+    
+    
+                marker_589623c4d0b8bbcebc751a80155bc599.setIcon(icon_4b89691f96adc338df6f31b6154d52f0);
+            
+    
+            var marker_adc0fb6f3466caa7e6894bc2b67c6505 = L.marker(
+                [18.977497, 84.009178],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_2008161fd1f87797d39a6b4373f72bb9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a82e5dbbc8e50cd992176a01ab44191f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c979b3666b038de7ea2cb4c640c89ca = $(`<div id="html_3c979b3666b038de7ea2cb4c640c89ca" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 18.977497°<br>Lon: 84.009178°<br>             X: 14662.37<br>Y: 3374.48<br>             Address: Serango, Gajapati, Odisha, India         </div>         </div>`)[0];
+                popup_a82e5dbbc8e50cd992176a01ab44191f.setContent(html_3c979b3666b038de7ea2cb4c640c89ca);
+            
+        
+
+        marker_adc0fb6f3466caa7e6894bc2b67c6505.bindPopup(popup_a82e5dbbc8e50cd992176a01ab44191f)
+        ;
+
+        
+    
+    
+                marker_adc0fb6f3466caa7e6894bc2b67c6505.setIcon(icon_2008161fd1f87797d39a6b4373f72bb9);
+            
+    
+            var marker_f62908fcff16553a25579719c6ba055b = L.marker(
+                [32.052735, 85.937073],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_ee4e7cd57203c90399b154fb6520d905 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d341636b6a44cb87b87aade7ec311da5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4a31ac93d8485d5b52098b86c3de246 = $(`<div id="html_d4a31ac93d8485d5b52098b86c3de246" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 32.052735°<br>Lon: 85.937073°<br>             X: 14998.85<br>Y: 5911.19<br>             Address: 阿索乡, 尼玛县 ཉི་མ་རྫོང།, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国         </div>         </div>`)[0];
+                popup_d341636b6a44cb87b87aade7ec311da5.setContent(html_d4a31ac93d8485d5b52098b86c3de246);
+            
+        
+
+        marker_f62908fcff16553a25579719c6ba055b.bindPopup(popup_d341636b6a44cb87b87aade7ec311da5)
+        ;
+
+        
+    
+    
+                marker_f62908fcff16553a25579719c6ba055b.setIcon(icon_ee4e7cd57203c90399b154fb6520d905);
+            
+    
+            var marker_565793ea25209be9c73f6e40c2f84f82 = L.marker(
+                [32.9895, 84.743212],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_a3d94b1c625994238774a83efdcf7d57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c9c603c73aa4aff94bb3d03a4405e94 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01f1adbced5343b455bc0d1efba18b95 = $(`<div id="html_01f1adbced5343b455bc0d1efba18b95" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 32.989500°<br>Lon: 84.743212°<br>             X: 14790.48<br>Y: 6105.09<br>             Address: 察布乡, 改则县 སྒེར་རྩེ་རྫོང་།, 阿里地区 མངའ་རིས་ས་ཁུལ་, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国         </div>         </div>`)[0];
+                popup_3c9c603c73aa4aff94bb3d03a4405e94.setContent(html_01f1adbced5343b455bc0d1efba18b95);
+            
+        
+
+        marker_565793ea25209be9c73f6e40c2f84f82.bindPopup(popup_3c9c603c73aa4aff94bb3d03a4405e94)
+        ;
+
+        
+    
+    
+                marker_565793ea25209be9c73f6e40c2f84f82.setIcon(icon_a3d94b1c625994238774a83efdcf7d57);
+            
+    
+            var marker_5e45c288b82c292861a2c8e8bd1c8e54 = L.marker(
+                [28.432583, 69.328907],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_cecc4c63adfa1d8baa33c6e4d928d1e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aef60d0886463f5f22689b1e57df1a69 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99e2017ac0ae55477d8de5e152b0726e = $(`<div id="html_99e2017ac0ae55477d8de5e152b0726e" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 28.432583°<br>Lon: 69.328907°<br>             X: 12100.18<br>Y: 5179.60<br>             Address: بخشاپور, تعلقہ کشمور, ضلع کشمور, پاکستان         </div>         </div>`)[0];
+                popup_aef60d0886463f5f22689b1e57df1a69.setContent(html_99e2017ac0ae55477d8de5e152b0726e);
+            
+        
+
+        marker_5e45c288b82c292861a2c8e8bd1c8e54.bindPopup(popup_aef60d0886463f5f22689b1e57df1a69)
+        ;
+
+        
+    
+    
+                marker_5e45c288b82c292861a2c8e8bd1c8e54.setIcon(icon_cecc4c63adfa1d8baa33c6e4d928d1e4);
+            
+    
+            var marker_fa063e99f21cce5437959e46c9ccafc9 = L.marker(
+                [14.60905, 76.392251],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_5719fde1f5456001529b5bad032e7014 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ffd77ad2c9066b3795d026045d089b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de97b54294c85e3db6fb111d18bfc461 = $(`<div id="html_de97b54294c85e3db6fb111d18bfc461" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 14.609050°<br>Lon: 76.392251°<br>             X: 13332.96<br>Y: 2577.85<br>             Address: Jyotipura, Jagaluru taluku, Davanagere, Karnataka, India         </div>         </div>`)[0];
+                popup_9ffd77ad2c9066b3795d026045d089b2.setContent(html_de97b54294c85e3db6fb111d18bfc461);
+            
+        
+
+        marker_fa063e99f21cce5437959e46c9ccafc9.bindPopup(popup_9ffd77ad2c9066b3795d026045d089b2)
+        ;
+
+        
+    
+    
+                marker_fa063e99f21cce5437959e46c9ccafc9.setIcon(icon_5719fde1f5456001529b5bad032e7014);
+            
+    
+            var marker_4095e747f3f0a365f4a9ef1b878acb9c = L.marker(
+                [10.313967, 74.750936],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_086e467adb00a16cd7b344291b953386 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_631819d2e7e51941a722cd2f7f543732 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0cd3f2718c0badfc8b8e6dedc338fa03 = $(`<div id="html_0cd3f2718c0badfc8b8e6dedc338fa03" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 10.313967°<br>Lon: 74.750936°<br>             X: 13046.50<br>Y: 1809.93<br>             Address: Not found         </div>         </div>`)[0];
+                popup_631819d2e7e51941a722cd2f7f543732.setContent(html_0cd3f2718c0badfc8b8e6dedc338fa03);
+            
+        
+
+        marker_4095e747f3f0a365f4a9ef1b878acb9c.bindPopup(popup_631819d2e7e51941a722cd2f7f543732)
+        ;
+
+        
+    
+    
+                marker_4095e747f3f0a365f4a9ef1b878acb9c.setIcon(icon_086e467adb00a16cd7b344291b953386);
+            
+    
+            var marker_4e6e82b2534eccf20836c003465ace87 = L.marker(
+                [10.929041, 76.061234],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_f04bcaf657f697a2c5523e19a390bebf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77029ce75910377ef2afe0499986456d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad61d2f6bb726317b12dc828a5979cc8 = $(`<div id="html_ad61d2f6bb726317b12dc828a5979cc8" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 10.929041°<br>Lon: 76.061234°<br>             X: 13275.19<br>Y: 1919.15<br>             Address: Tirur, Malappuram, Kerala, 676553, India         </div>         </div>`)[0];
+                popup_77029ce75910377ef2afe0499986456d.setContent(html_ad61d2f6bb726317b12dc828a5979cc8);
+            
+        
+
+        marker_4e6e82b2534eccf20836c003465ace87.bindPopup(popup_77029ce75910377ef2afe0499986456d)
+        ;
+
+        
+    
+    
+                marker_4e6e82b2534eccf20836c003465ace87.setIcon(icon_f04bcaf657f697a2c5523e19a390bebf);
+            
+    
+            var marker_ce06ac353de874b47f059e476f931562 = L.marker(
+                [26.434849, 78.580133],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_75beccecef4d5f763e9cb0fa9dcbc8bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf82209a0a1a9df12f4c4cab91a4900a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7bce984624bfaa40ffd91e3dd95e4c2b = $(`<div id="html_7bce984624bfaa40ffd91e3dd95e4c2b" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 26.434849°<br>Lon: 78.580133°<br>             X: 13714.82<br>Y: 4786.73<br>             Address: Dhanoli, Mehgaon Tahsil, Bhind, Madhya Pradesh, India         </div>         </div>`)[0];
+                popup_bf82209a0a1a9df12f4c4cab91a4900a.setContent(html_7bce984624bfaa40ffd91e3dd95e4c2b);
+            
+        
+
+        marker_ce06ac353de874b47f059e476f931562.bindPopup(popup_bf82209a0a1a9df12f4c4cab91a4900a)
+        ;
+
+        
+    
+    
+                marker_ce06ac353de874b47f059e476f931562.setIcon(icon_75beccecef4d5f763e9cb0fa9dcbc8bf);
+            
+    
+            var marker_034a5dcfc16d49f74154ccc854354a21 = L.marker(
+                [18.735248, 74.075704],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_09726e8102e4d0e463610d60c8f97633 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b09af7a3cce5a2e52a31844976dd7cc5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f27de3a4eefabadee9742f9b0f07bdb = $(`<div id="html_4f27de3a4eefabadee9742f9b0f07bdb" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 18.735248°<br>Lon: 74.075704°<br>             X: 12928.65<br>Y: 3329.80<br>             Address: Shirur, Pune, Maharashtra, India         </div>         </div>`)[0];
+                popup_b09af7a3cce5a2e52a31844976dd7cc5.setContent(html_4f27de3a4eefabadee9742f9b0f07bdb);
+            
+        
+
+        marker_034a5dcfc16d49f74154ccc854354a21.bindPopup(popup_b09af7a3cce5a2e52a31844976dd7cc5)
+        ;
+
+        
+    
+    
+                marker_034a5dcfc16d49f74154ccc854354a21.setIcon(icon_09726e8102e4d0e463610d60c8f97633);
+            
+    
+            var marker_f4f4ae762036e65621c9290b4d3968e5 = L.marker(
+                [15.742357, 95.162983],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_2464d169c13ccfa2749948b99d4617fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c7e6cddf28f416a7c2d793c475cde55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4e28a8840f4804ff7a1c91868da6091 = $(`<div id="html_c4e28a8840f4804ff7a1c91868da6091" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 15.742357°<br>Lon: 95.162983°<br>             X: 16609.07<br>Y: 2782.80<br>             Address: Taun Yar (တောင်ယာ), ဘိုကလေးမြို့နယ်, ဖျာပုံခရိုင်, ဧရာဝတီတိုင်းဒေသကြီး, မြန်မာ         </div>         </div>`)[0];
+                popup_6c7e6cddf28f416a7c2d793c475cde55.setContent(html_c4e28a8840f4804ff7a1c91868da6091);
+            
+        
+
+        marker_f4f4ae762036e65621c9290b4d3968e5.bindPopup(popup_6c7e6cddf28f416a7c2d793c475cde55)
+        ;
+
+        
+    
+    
+                marker_f4f4ae762036e65621c9290b4d3968e5.setIcon(icon_2464d169c13ccfa2749948b99d4617fd);
+            
+    
+            var marker_7e41bddc7589f6e29532e00779e1881a = L.marker(
+                [26.793026, 85.664799],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_358cd5175c6342ae3148e4f4da33ad50 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ffeeb2a6bccbaf1a6520c615a9908b14 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14e7a21eb4d02823715b6b938666a903 = $(`<div id="html_14e7a21eb4d02823715b6b938666a903" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 26.793026°<br>Lon: 85.664799°<br>             X: 14951.33<br>Y: 4856.65<br>             Address: Parihar, Sitamarhi, Bihar, India         </div>         </div>`)[0];
+                popup_ffeeb2a6bccbaf1a6520c615a9908b14.setContent(html_14e7a21eb4d02823715b6b938666a903);
+            
+        
+
+        marker_7e41bddc7589f6e29532e00779e1881a.bindPopup(popup_ffeeb2a6bccbaf1a6520c615a9908b14)
+        ;
+
+        
+    
+    
+                marker_7e41bddc7589f6e29532e00779e1881a.setIcon(icon_358cd5175c6342ae3148e4f4da33ad50);
+            
+    
+            var marker_91f0a89c975209575b6282075421ead4 = L.marker(
+                [12.963021, 89.144677],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_9dcf91a69e27a151974787d33d93e6d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68e82bc16189854cbea820e49f5af2d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50054c802ae6ba4935802edc21308ffa = $(`<div id="html_50054c802ae6ba4935802edc21308ffa" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 12.963021°<br>Lon: 89.144677°<br>             X: 15558.68<br>Y: 2282.03<br>             Address: Not found         </div>         </div>`)[0];
+                popup_68e82bc16189854cbea820e49f5af2d0.setContent(html_50054c802ae6ba4935802edc21308ffa);
+            
+        
+
+        marker_91f0a89c975209575b6282075421ead4.bindPopup(popup_68e82bc16189854cbea820e49f5af2d0)
+        ;
+
+        
+    
+    
+                marker_91f0a89c975209575b6282075421ead4.setIcon(icon_9dcf91a69e27a151974787d33d93e6d6);
+            
+    
+            var marker_ecd23ebba1bf2fc967933ae1aff8fb5a = L.marker(
+                [12.738672, 79.004208],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_8a1f9c0dbf41f5fc1398a66b6fe96fb9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4845bceea950d10f2e133b0400f9730 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05f8aed19d2a17d8f0b00ae52aeb4bcf = $(`<div id="html_05f8aed19d2a17d8f0b00ae52aeb4bcf" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 12.738672°<br>Lon: 79.004208°<br>             X: 13788.84<br>Y: 2241.86<br>             Address: Sarathankolai, Vellore, Tamil Nadu, India         </div>         </div>`)[0];
+                popup_c4845bceea950d10f2e133b0400f9730.setContent(html_05f8aed19d2a17d8f0b00ae52aeb4bcf);
+            
+        
+
+        marker_ecd23ebba1bf2fc967933ae1aff8fb5a.bindPopup(popup_c4845bceea950d10f2e133b0400f9730)
+        ;
+
+        
+    
+    
+                marker_ecd23ebba1bf2fc967933ae1aff8fb5a.setIcon(icon_8a1f9c0dbf41f5fc1398a66b6fe96fb9);
+            
+    
+            var marker_f3d7aad0139559b3083cf41171156c18 = L.marker(
+                [36.696177, 86.559993],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_56dcf1b4281b78037bf25d76b0070286 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b6be9fc62fd839a6cb7b0717a96c84f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78dc67ce6a5a10cebf772fe4bbf4ae86 = $(`<div id="html_78dc67ce6a5a10cebf772fe4bbf4ae86" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 36.696177°<br>Lon: 86.559993°<br>             X: 15107.57<br>Y: 6893.61<br>             Address: 库拉木勒克乡 قوراملىق يېزىسى, 且末县, 巴音郭楞蒙古自治州 بايىنغولىن موڭغۇل ئاپتونوم ئوبلاستى, 新疆维吾尔自治区 شىنجاڭ ئۇيغۇر ئاپتونوم رايونی, 中国         </div>         </div>`)[0];
+                popup_b6be9fc62fd839a6cb7b0717a96c84f4.setContent(html_78dc67ce6a5a10cebf772fe4bbf4ae86);
+            
+        
+
+        marker_f3d7aad0139559b3083cf41171156c18.bindPopup(popup_b6be9fc62fd839a6cb7b0717a96c84f4)
+        ;
+
+        
+    
+    
+                marker_f3d7aad0139559b3083cf41171156c18.setIcon(icon_56dcf1b4281b78037bf25d76b0070286);
+            
+    
+            var marker_4f81724128b19a34a4fb69bba982eb6e = L.marker(
+                [24.151543, 87.853813],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_14e4746b95c67ab0d9a229639efbc262 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_62a420f2af98f980e16e5488bd5273f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5e1d0abaa789dd5a0544d43e3330eac = $(`<div id="html_c5e1d0abaa789dd5a0544d43e3330eac" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 24.151543°<br>Lon: 87.853813°<br>             X: 15333.38<br>Y: 4345.92<br>             Address: Margram, Rampurhat - II, Birbhum, West Bengal, 731203, India         </div>         </div>`)[0];
+                popup_62a420f2af98f980e16e5488bd5273f1.setContent(html_c5e1d0abaa789dd5a0544d43e3330eac);
+            
+        
+
+        marker_4f81724128b19a34a4fb69bba982eb6e.bindPopup(popup_62a420f2af98f980e16e5488bd5273f1)
+        ;
+
+        
+    
+    
+                marker_4f81724128b19a34a4fb69bba982eb6e.setIcon(icon_14e4746b95c67ab0d9a229639efbc262);
+            
+    
+            var marker_dcffebc41296623734571412c5dc93be = L.marker(
+                [32.442706, 90.503997],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_526a022299e71073fcbda825fec162aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2296c2de81f9b165348cc1cc4e89acb0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee82ddd0fd27ce9e246ecd94b4c661d1 = $(`<div id="html_ee82ddd0fd27ce9e246ecd94b4c661d1" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 32.442706°<br>Lon: 90.503997°<br>             X: 15795.93<br>Y: 5991.66<br>             Address: 扎曲乡, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国         </div>         </div>`)[0];
+                popup_2296c2de81f9b165348cc1cc4e89acb0.setContent(html_ee82ddd0fd27ce9e246ecd94b4c661d1);
+            
+        
+
+        marker_dcffebc41296623734571412c5dc93be.bindPopup(popup_2296c2de81f9b165348cc1cc4e89acb0)
+        ;
+
+        
+    
+    
+                marker_dcffebc41296623734571412c5dc93be.setIcon(icon_526a022299e71073fcbda825fec162aa);
+            
+    
+            var marker_a66eeba531c36cdc2c097551a0d2c12a = L.marker(
+                [14.642394, 68.930907],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_8505ad19de8811a6ea49967cf6fcc009 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f908920bcd1ee9ddc9272ae74adcd358 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c64eabe14fcf57e959dab28dec859351 = $(`<div id="html_c64eabe14fcf57e959dab28dec859351" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 14.642394°<br>Lon: 68.930907°<br>             X: 12030.71<br>Y: 2583.86<br>             Address: Not found         </div>         </div>`)[0];
+                popup_f908920bcd1ee9ddc9272ae74adcd358.setContent(html_c64eabe14fcf57e959dab28dec859351);
+            
+        
+
+        marker_a66eeba531c36cdc2c097551a0d2c12a.bindPopup(popup_f908920bcd1ee9ddc9272ae74adcd358)
+        ;
+
+        
+    
+    
+                marker_a66eeba531c36cdc2c097551a0d2c12a.setIcon(icon_8505ad19de8811a6ea49967cf6fcc009);
+            
+    
+            var marker_a1ffbe6a0a9c6f624be10bd7b96bf69d = L.marker(
+                [17.148138, 75.764485],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_0370f03bc1413fdc6b8fd8dbdf2cb3e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23ea5a3078660d6bba75e01993b83a08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18f134cb5f7dbe2eb434af5eefed990a = $(`<div id="html_18f134cb5f7dbe2eb434af5eefed990a" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 17.148138°<br>Lon: 75.764485°<br>             X: 13223.40<br>Y: 3038.62<br>             Address: Sonakanahalli, Indi taluku, Vijayapura, Karnataka, India         </div>         </div>`)[0];
+                popup_23ea5a3078660d6bba75e01993b83a08.setContent(html_18f134cb5f7dbe2eb434af5eefed990a);
+            
+        
+
+        marker_a1ffbe6a0a9c6f624be10bd7b96bf69d.bindPopup(popup_23ea5a3078660d6bba75e01993b83a08)
+        ;
+
+        
+    
+    
+                marker_a1ffbe6a0a9c6f624be10bd7b96bf69d.setIcon(icon_0370f03bc1413fdc6b8fd8dbdf2cb3e8);
+            
+    
+            var marker_1630c045cc6598082a0bbbb138c182e4 = L.marker(
+                [14.118502, 95.344382],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_b049f100bcb8e3634121f7789dc5701b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_430f5ccbbf7982e417e9a0bea2d68c22 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cfeea9416edb4deba156667ec626147a = $(`<div id="html_cfeea9416edb4deba156667ec626147a" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 14.118502°<br>Lon: 95.344382°<br>             X: 16640.73<br>Y: 2489.47<br>             Address: Not found         </div>         </div>`)[0];
+                popup_430f5ccbbf7982e417e9a0bea2d68c22.setContent(html_cfeea9416edb4deba156667ec626147a);
+            
+        
+
+        marker_1630c045cc6598082a0bbbb138c182e4.bindPopup(popup_430f5ccbbf7982e417e9a0bea2d68c22)
+        ;
+
+        
+    
+    
+                marker_1630c045cc6598082a0bbbb138c182e4.setIcon(icon_b049f100bcb8e3634121f7789dc5701b);
+            
+    
+            var marker_0c58c92d1e712c2c3fc77db3a4c0b676 = L.marker(
+                [33.414661, 77.125659],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_58e276b6135be20c4d6153c10c3e9479 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1fa92b2e229cd01a2e87bfdfb526c610 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ded39d4d838f947cf4c7cc53cad0d3b = $(`<div id="html_5ded39d4d838f947cf4c7cc53cad0d3b" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 33.414661°<br>Lon: 77.125659°<br>             X: 13460.97<br>Y: 6193.77<br>             Address: Salang Tatak, Zanskar, Ladakh, India         </div>         </div>`)[0];
+                popup_1fa92b2e229cd01a2e87bfdfb526c610.setContent(html_5ded39d4d838f947cf4c7cc53cad0d3b);
+            
+        
+
+        marker_0c58c92d1e712c2c3fc77db3a4c0b676.bindPopup(popup_1fa92b2e229cd01a2e87bfdfb526c610)
+        ;
+
+        
+    
+    
+                marker_0c58c92d1e712c2c3fc77db3a4c0b676.setIcon(icon_58e276b6135be20c4d6153c10c3e9479);
+            
+    
+            var marker_a5453f597da21afb29c4604520baaf57 = L.marker(
+                [27.007721, 79.473325],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_fe8aff5f8381b0b5d885e1b57064ea94 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3862ea642001ac4ed184209edabe7152 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_639abd75536a9603eb61f723fea630cd = $(`<div id="html_639abd75536a9603eb61f723fea630cd" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 27.007721°<br>Lon: 79.473325°<br>             X: 13870.71<br>Y: 4898.67<br>             Address: Saurikh, Chhibramau, Kannauj, Uttar Pradesh, India         </div>         </div>`)[0];
+                popup_3862ea642001ac4ed184209edabe7152.setContent(html_639abd75536a9603eb61f723fea630cd);
+            
+        
+
+        marker_a5453f597da21afb29c4604520baaf57.bindPopup(popup_3862ea642001ac4ed184209edabe7152)
+        ;
+
+        
+    
+    
+                marker_a5453f597da21afb29c4604520baaf57.setIcon(icon_fe8aff5f8381b0b5d885e1b57064ea94);
+            
+    
+            var marker_fcc32cba141dc9ab33fd912821154741 = L.marker(
+                [34.52188, 81.306704],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_15e5d165f2552c8f262a9fc3a52a9e20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa7d325e2bc8f797e4d973b7ccd5a016 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72a2a22de6b2c74f42ca58fc4945ec07 = $(`<div id="html_72a2a22de6b2c74f42ca58fc4945ec07" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 34.521880°<br>Lon: 81.306704°<br>             X: 14190.70<br>Y: 6426.79<br>             Address: 东汝乡, 日土县 རུ་ཐོག་རྫོང་, 阿里地区 མངའ་རིས་ས་ཁུལ་, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国         </div>         </div>`)[0];
+                popup_aa7d325e2bc8f797e4d973b7ccd5a016.setContent(html_72a2a22de6b2c74f42ca58fc4945ec07);
+            
+        
+
+        marker_fcc32cba141dc9ab33fd912821154741.bindPopup(popup_aa7d325e2bc8f797e4d973b7ccd5a016)
+        ;
+
+        
+    
+    
+                marker_fcc32cba141dc9ab33fd912821154741.setIcon(icon_15e5d165f2552c8f262a9fc3a52a9e20);
+            
+    
+            var marker_361019ea4fe4502757771fce59fc2e6f = L.marker(
+                [15.681525, 75.152198],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_f906f4dce2a12395a5ebd6473d04f275 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9f13905f576479de3588e8eeabbd684c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92f82510f82323aec20573c51a969649 = $(`<div id="html_92f82510f82323aec20573c51a969649" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 15.681525°<br>Lon: 75.152198°<br>             X: 13116.53<br>Y: 2771.77<br>             Address: Savadatti taluku, Belagavi, Karnataka, India         </div>         </div>`)[0];
+                popup_9f13905f576479de3588e8eeabbd684c.setContent(html_92f82510f82323aec20573c51a969649);
+            
+        
+
+        marker_361019ea4fe4502757771fce59fc2e6f.bindPopup(popup_9f13905f576479de3588e8eeabbd684c)
+        ;
+
+        
+    
+    
+                marker_361019ea4fe4502757771fce59fc2e6f.setIcon(icon_f906f4dce2a12395a5ebd6473d04f275);
+            
+    
+            var marker_22a400296610a1dadcf544d988a266cc = L.marker(
+                [24.279676, 75.619507],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_bb232ed5c717e25d69997c34be335c1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e87cebb38819b4b309274253ccd0faec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad40fc0890733b57368a65588a2496a5 = $(`<div id="html_ad40fc0890733b57368a65588a2496a5" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 24.279676°<br>Lon: 75.619507°<br>             X: 13198.09<br>Y: 4370.44<br>             Address: MD2204, Bardiya Amra, Khajuri Runda, Garoth Tahsil, Mandsaur, Madhya Pradesh, 458880, India         </div>         </div>`)[0];
+                popup_e87cebb38819b4b309274253ccd0faec.setContent(html_ad40fc0890733b57368a65588a2496a5);
+            
+        
+
+        marker_22a400296610a1dadcf544d988a266cc.bindPopup(popup_e87cebb38819b4b309274253ccd0faec)
+        ;
+
+        
+    
+    
+                marker_22a400296610a1dadcf544d988a266cc.setIcon(icon_bb232ed5c717e25d69997c34be335c1f);
+            
+    
+            var marker_b6fa16dfab06f4e1748792eac1319f1b = L.marker(
+                [24.952994, 94.036864],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_5696c7d63817d2ff790598c85cd7783a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_031aea18b6e9244c1e9b7e54f09b59b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3109145dbca2a8a0ecb40e46bf315714 = $(`<div id="html_3109145dbca2a8a0ecb40e46bf315714" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 24.952994°<br>Lon: 94.036864°<br>             X: 16412.53<br>Y: 4499.70<br>             Address: Uyumpok, Sawombung, Imphal East, Manipur, 795114, India         </div>         </div>`)[0];
+                popup_031aea18b6e9244c1e9b7e54f09b59b6.setContent(html_3109145dbca2a8a0ecb40e46bf315714);
+            
+        
+
+        marker_b6fa16dfab06f4e1748792eac1319f1b.bindPopup(popup_031aea18b6e9244c1e9b7e54f09b59b6)
+        ;
+
+        
+    
+    
+                marker_b6fa16dfab06f4e1748792eac1319f1b.setIcon(icon_5696c7d63817d2ff790598c85cd7783a);
+            
+    
+            var marker_9f14c0760d341c72070a44677491902b = L.marker(
+                [19.582615, 74.360302],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_ca2f55e03814a43763b29d5442f49b98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_90e9d75b7d40b603e3113c057d818cd9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21f8af3da17b8f92cf9f5793260e8851 = $(`<div id="html_21f8af3da17b8f92cf9f5793260e8851" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 19.582615°<br>Lon: 74.360302°<br>             X: 12978.32<br>Y: 3486.36<br>             Address: Sangamner, Ahmednagar, Maharashtra, India         </div>         </div>`)[0];
+                popup_90e9d75b7d40b603e3113c057d818cd9.setContent(html_21f8af3da17b8f92cf9f5793260e8851);
+            
+        
+
+        marker_9f14c0760d341c72070a44677491902b.bindPopup(popup_90e9d75b7d40b603e3113c057d818cd9)
+        ;
+
+        
+    
+    
+                marker_9f14c0760d341c72070a44677491902b.setIcon(icon_ca2f55e03814a43763b29d5442f49b98);
+            
+    
+            var marker_dedc2ca41e28721d1fe32abc9ef37ade = L.marker(
+                [36.928591, 82.776263],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_b1721673ad26caf8468f4aaa6b8cfc15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0933b5fc6bf3d6fb6d9d9525df1e2fe8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c76d166fd582191de0c4a4ecdb728c06 = $(`<div id="html_c76d166fd582191de0c4a4ecdb728c06" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 36.928591°<br>Lon: 82.776263°<br>             X: 14447.18<br>Y: 6944.28<br>             Address: 民丰县 نىيە, 民丰县 نىيە ناھىيىسى, 和田地区 خوتەن ۋىلايىتى, 新疆维吾尔自治区 شىنجاڭ ئۇيغۇر ئاپتونوم رايونی, 中国         </div>         </div>`)[0];
+                popup_0933b5fc6bf3d6fb6d9d9525df1e2fe8.setContent(html_c76d166fd582191de0c4a4ecdb728c06);
+            
+        
+
+        marker_dedc2ca41e28721d1fe32abc9ef37ade.bindPopup(popup_0933b5fc6bf3d6fb6d9d9525df1e2fe8)
+        ;
+
+        
+    
+    
+                marker_dedc2ca41e28721d1fe32abc9ef37ade.setIcon(icon_b1721673ad26caf8468f4aaa6b8cfc15);
+            
+    
+            var marker_8757211a589a73fe4feae130c0302ac8 = L.marker(
+                [10.636373, 69.366375],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_e6eb6924185ca8e54deb72aaffdea240 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c13968f2a60cf9dfc8eeac17b075eef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58449b98e7c6e38d9ff17b3ef17bcb32 = $(`<div id="html_58449b98e7c6e38d9ff17b3ef17bcb32" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 10.636373°<br>Lon: 69.366375°<br>             X: 12106.72<br>Y: 1867.15<br>             Address: Not found         </div>         </div>`)[0];
+                popup_6c13968f2a60cf9dfc8eeac17b075eef.setContent(html_58449b98e7c6e38d9ff17b3ef17bcb32);
+            
+        
+
+        marker_8757211a589a73fe4feae130c0302ac8.bindPopup(popup_6c13968f2a60cf9dfc8eeac17b075eef)
+        ;
+
+        
+    
+    
+                marker_8757211a589a73fe4feae130c0302ac8.setIcon(icon_e6eb6924185ca8e54deb72aaffdea240);
+            
+    
+            var marker_c595f60a42db61648dae9845e9aec245 = L.marker(
+                [11.179825, 86.195935],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_38a8579f6c2fa100ed2d8f8c6415613f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00d299abef35adecacac9785b3013ecf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e66f7bab9bb1470a7dd15240203d0488 = $(`<div id="html_e66f7bab9bb1470a7dd15240203d0488" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 11.179825°<br>Lon: 86.195935°<br>             X: 15044.03<br>Y: 1963.75<br>             Address: Not found         </div>         </div>`)[0];
+                popup_00d299abef35adecacac9785b3013ecf.setContent(html_e66f7bab9bb1470a7dd15240203d0488);
+            
+        
+
+        marker_c595f60a42db61648dae9845e9aec245.bindPopup(popup_00d299abef35adecacac9785b3013ecf)
+        ;
+
+        
+    
+    
+                marker_c595f60a42db61648dae9845e9aec245.setIcon(icon_38a8579f6c2fa100ed2d8f8c6415613f);
+            
+    
+            var marker_d5b2c7aa33187bb7c8426a26bc9aa568 = L.marker(
+                [30.970302, 80.242639],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_a818e4f984845de381d5ab429dfafaea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_faf2b7b694da61932b37d2006b35e3cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83466d06adf4f9431f1c3af5ad4e0dd6 = $(`<div id="html_83466d06adf4f9431f1c3af5ad4e0dd6" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 30.970302°<br>Lon: 80.242639°<br>             X: 14004.98<br>Y: 5689.58<br>             Address: 达巴乡, 札达县 རྩ་མདའ་རྫོང་།, 阿里地区 མངའ་རིས་ས་ཁུལ་, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国         </div>         </div>`)[0];
+                popup_faf2b7b694da61932b37d2006b35e3cc.setContent(html_83466d06adf4f9431f1c3af5ad4e0dd6);
+            
+        
+
+        marker_d5b2c7aa33187bb7c8426a26bc9aa568.bindPopup(popup_faf2b7b694da61932b37d2006b35e3cc)
+        ;
+
+        
+    
+    
+                marker_d5b2c7aa33187bb7c8426a26bc9aa568.setIcon(icon_a818e4f984845de381d5ab429dfafaea);
+            
+    
+            var marker_2ba6ef48f825800cbb7cdedeb44dc6fd = L.marker(
+                [9.842303, 79.066959],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_45d641e7b4fc18ce0ea87813a4701b63 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a110a638a418fbec6430e5de92908c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55f2830e8698fa905fd9a5dd58ea3b52 = $(`<div id="html_55f2830e8698fa905fd9a5dd58ea3b52" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 9.842303°<br>Lon: 79.066959°<br>             X: 13799.79<br>Y: 1726.32<br>             Address: Ettuseri, Marungur, Tiruvadanai, Ramanathapuram, Tamil Nadu, 623406, India         </div>         </div>`)[0];
+                popup_8a110a638a418fbec6430e5de92908c5.setContent(html_55f2830e8698fa905fd9a5dd58ea3b52);
+            
+        
+
+        marker_2ba6ef48f825800cbb7cdedeb44dc6fd.bindPopup(popup_8a110a638a418fbec6430e5de92908c5)
+        ;
+
+        
+    
+    
+                marker_2ba6ef48f825800cbb7cdedeb44dc6fd.setIcon(icon_45d641e7b4fc18ce0ea87813a4701b63);
+            
+    
+            var marker_aee75775f265c9d85df3be272b218cb8 = L.marker(
+                [36.88752, 83.344316],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_2e71380c84c574ade11cd0651e4b00f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5abda16355082d9c34ff1cf40ddaf72 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1611d62c058c869474b0f2f169995da0 = $(`<div id="html_1611d62c058c869474b0f2f169995da0" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 36.887520°<br>Lon: 83.344316°<br>             X: 14546.33<br>Y: 6935.32<br>             Address: 民丰县 نىيە ناھىيىسى, 和田地区 خوتەن ۋىلايىتى, 新疆维吾尔自治区 شىنجاڭ ئۇيغۇر ئاپتونوم رايونی, 中国         </div>         </div>`)[0];
+                popup_c5abda16355082d9c34ff1cf40ddaf72.setContent(html_1611d62c058c869474b0f2f169995da0);
+            
+        
+
+        marker_aee75775f265c9d85df3be272b218cb8.bindPopup(popup_c5abda16355082d9c34ff1cf40ddaf72)
+        ;
+
+        
+    
+    
+                marker_aee75775f265c9d85df3be272b218cb8.setIcon(icon_2e71380c84c574ade11cd0651e4b00f6);
+            
+    
+            var marker_2b98ddae27556fc02c57003a7700bf52 = L.marker(
+                [36.161273, 92.962611],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_e7c3e0fb4fa7d9dbd91ee5f50584c2dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0818c0349dcf0679caef8113127b181f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc93c0ea175aafc89af8e016cacc57c6 = $(`<div id="html_bc93c0ea175aafc89af8e016cacc57c6" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 36.161273°<br>Lon: 92.962611°<br>             X: 16225.04<br>Y: 6777.58<br>             Address: 郭勒木德镇, 青海省, 中国         </div>         </div>`)[0];
+                popup_0818c0349dcf0679caef8113127b181f.setContent(html_bc93c0ea175aafc89af8e016cacc57c6);
+            
+        
+
+        marker_2b98ddae27556fc02c57003a7700bf52.bindPopup(popup_0818c0349dcf0679caef8113127b181f)
+        ;
+
+        
+    
+    
+                marker_2b98ddae27556fc02c57003a7700bf52.setIcon(icon_e7c3e0fb4fa7d9dbd91ee5f50584c2dd);
+            
+    
+            var marker_61bf5ec7384580121f5de08c16bd2199 = L.marker(
+                [12.5667, 75.3833],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_fc3ed958c8ce213657db31891e77b4b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_81c0eace8bbec58522a4e25bc6f16997 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2465e18c08990d7a8a603aaaa375800 = $(`<div id="html_a2465e18c08990d7a8a603aaaa375800" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 12.566700°<br>Lon: 75.383300°<br>             X: 13156.87<br>Y: 2211.10<br>             Address: Sulya, Sulya taluk, Dakshina Kannada, Karnataka, 574239, India         </div>         </div>`)[0];
+                popup_81c0eace8bbec58522a4e25bc6f16997.setContent(html_a2465e18c08990d7a8a603aaaa375800);
+            
+        
+
+        marker_61bf5ec7384580121f5de08c16bd2199.bindPopup(popup_81c0eace8bbec58522a4e25bc6f16997)
+        ;
+
+        
+    
+    
+                marker_61bf5ec7384580121f5de08c16bd2199.setIcon(icon_fc3ed958c8ce213657db31891e77b4b3);
+            
+    
+            var marker_51d1660e7ed17e1e3a664cb1caf50239 = L.marker(
+                [12.9141, 74.856],
+                {
+}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            var icon_f6aab47b8011bede11a109bde4efd218 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f94384295863faf9af31dc240f4f5f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b3fdc034e7a6423d79b2dd234dfd8935 = $(`<div id="html_b3fdc034e7a6423d79b2dd234dfd8935" style="width: 100.0%; height: 100.0%;">         <b>Original Coordinates</b><hr>         <div style="font-size:12px">             Lat: 12.914100°<br>Lon: 74.856000°<br>             X: 13064.84<br>Y: 2273.27<br>             Address: Bolpugudde, Gandhinagar, Kavoor, Mangaluru taluk, Dakshina Kannada, Karnataka, 575008, India         </div>         </div>`)[0];
+                popup_3f94384295863faf9af31dc240f4f5f4.setContent(html_b3fdc034e7a6423d79b2dd234dfd8935);
+            
+        
+
+        marker_51d1660e7ed17e1e3a664cb1caf50239.bindPopup(popup_3f94384295863faf9af31dc240f4f5f4)
+        ;
+
+        
+    
+    
+                marker_51d1660e7ed17e1e3a664cb1caf50239.setIcon(icon_f6aab47b8011bede11a109bde4efd218);
+            
+    
+            var poly_line_c799ac3dc1133d875f02720c8053b61b = L.polyline(
+                [[26.543377, 68.725312], [15.97585, 74.473111], [29.357665, 87.624285], [33.873207, 70.521226], [20.235733, 68.864119], [14.340501, 82.655303], [8.769543, 73.766292], [26.846649, 83.803303], [14.392778, 85.088705], [31.473483, 68.188464], [31.368758, 88.246042], [17.867265, 72.508905], [35.759179, 77.761242], [10.689629, 70.804775], [32.577337, 85.508055], [31.40672, 89.162222], [23.550615, 96.220357], [18.977497, 84.009178], [32.052735, 85.937073], [32.9895, 84.743212], [28.432583, 69.328907], [14.60905, 76.392251], [10.313967, 74.750936], [10.929041, 76.061234], [26.434849, 78.580133], [18.735248, 74.075704], [15.742357, 95.162983], [26.793026, 85.664799], [12.963021, 89.144677], [12.738672, 79.004208], [36.696177, 86.559993], [24.151543, 87.853813], [32.442706, 90.503997], [14.642394, 68.930907], [17.148138, 75.764485], [14.118502, 95.344382], [33.414661, 77.125659], [27.007721, 79.473325], [34.52188, 81.306704], [15.681525, 75.152198], [24.279676, 75.619507], [24.952994, 94.036864], [19.582615, 74.360302], [36.928591, 82.776263], [10.636373, 69.366375], [11.179825, 86.195935], [30.970302, 80.242639], [9.842303, 79.066959], [36.88752, 83.344316], [36.161273, 92.962611], [12.5667, 75.3833], [12.9141, 74.856]],
+                {"bubblingMouseEvents": true, "color": "#888", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#888", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(feature_group_6fe238015d0d2481c1ff76a5a2bc34e6);
+        
+    
+            feature_group_6fe238015d0d2481c1ff76a5a2bc34e6.addTo(map_2348e34f1ca557cc571eb568b8bd2c67);
+        
+    
+            var feature_group_64775892e8952ac5cedde1c44e448a0c = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_b2c1e01a204c2806e1a8fe9c2f9b008f = L.marker(
+                [26.543376999999996, 68.725312],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_ec630f9f71c2c1bc663872a9feb73dd2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df0e4f5ecf5cfbbb11bd28b95d06756d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8560ac136349cdc77ebe5908d7cdb34a = $(`<div id="html_8560ac136349cdc77ebe5908d7cdb34a" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 26.543377°<br>Lon: 68.725312°<br>             Original X: 11994.83<br>Original Y: 4807.89<br>             Address: تعلقہ دوڑ, ضلع شہید بینظیر آباد, شہید بینظیر آباد ڈویژن, پاکستان         </div>         </div>`)[0];
+                popup_df0e4f5ecf5cfbbb11bd28b95d06756d.setContent(html_8560ac136349cdc77ebe5908d7cdb34a);
+            
+        
+
+        marker_b2c1e01a204c2806e1a8fe9c2f9b008f.bindPopup(popup_df0e4f5ecf5cfbbb11bd28b95d06756d)
+        ;
+
+        
+    
+    
+                marker_b2c1e01a204c2806e1a8fe9c2f9b008f.setIcon(icon_ec630f9f71c2c1bc663872a9feb73dd2);
+            
+    
+            var marker_ec82f67815b90ae3a08f25191dbe25f6 = L.marker(
+                [15.975850000000001, 74.473111],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_5ac8d69ff0d85756597f2681e0c1f68f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2fd707c4f07195992dcbd7ce818d34bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b31b900596464bb7bbd032b5150956f = $(`<div id="html_7b31b900596464bb7bbd032b5150956f" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 15.975850°<br>Lon: 74.473111°<br>             Original X: 12998.01<br>Original Y: 2825.16<br>             Address: Mannikeri, Belagavi taluku, Belagavi, Karnataka, 591143, India         </div>         </div>`)[0];
+                popup_2fd707c4f07195992dcbd7ce818d34bb.setContent(html_7b31b900596464bb7bbd032b5150956f);
+            
+        
+
+        marker_ec82f67815b90ae3a08f25191dbe25f6.bindPopup(popup_2fd707c4f07195992dcbd7ce818d34bb)
+        ;
+
+        
+    
+    
+                marker_ec82f67815b90ae3a08f25191dbe25f6.setIcon(icon_5ac8d69ff0d85756597f2681e0c1f68f);
+            
+    
+            var marker_d8737d75746b4b295a7c431a570fbe70 = L.marker(
+                [29.357665000000008, 87.624285],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_33fd9d36d513eb322fee54393dcd63d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6346a80d6f8349da4acb27c05ebe2163 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3287282bce725228e145583bcf6845fc = $(`<div id="html_3287282bce725228e145583bcf6845fc" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 29.357665°<br>Lon: 87.624285°<br>             Original X: 15293.32<br>Original Y: 5364.02<br>             Address: 达居乡, 昂仁县 ངམ་རིང་རྫོང།, 日喀则市 གཞིས་ཀ་རྩེ་གྲོང་ཁྱེར།, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国         </div>         </div>`)[0];
+                popup_6346a80d6f8349da4acb27c05ebe2163.setContent(html_3287282bce725228e145583bcf6845fc);
+            
+        
+
+        marker_d8737d75746b4b295a7c431a570fbe70.bindPopup(popup_6346a80d6f8349da4acb27c05ebe2163)
+        ;
+
+        
+    
+    
+                marker_d8737d75746b4b295a7c431a570fbe70.setIcon(icon_33fd9d36d513eb322fee54393dcd63d3);
+            
+    
+            var marker_dc7a84fcfb52ecaf13f9affd1f58356c = L.marker(
+                [33.873207000000015, 70.521226],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_21c385ef7a5c5849c8bdc6d9b4353287 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd7c6c6d7ca84d97c63f966077fc2d08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6031e2891ba8451ba50edcc4a5f4d3e3 = $(`<div id="html_6031e2891ba8451ba50edcc4a5f4d3e3" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 33.873207°<br>Lon: 70.521226°<br>             Original X: 12308.28<br>Original Y: 6289.91<br>             Address: Garibal, تحصیل لنڈی کوتل, ضلع خیبر, پشاور ڈویژن, خیبر پختونخوا, پاکستان         </div>         </div>`)[0];
+                popup_cd7c6c6d7ca84d97c63f966077fc2d08.setContent(html_6031e2891ba8451ba50edcc4a5f4d3e3);
+            
+        
+
+        marker_dc7a84fcfb52ecaf13f9affd1f58356c.bindPopup(popup_cd7c6c6d7ca84d97c63f966077fc2d08)
+        ;
+
+        
+    
+    
+                marker_dc7a84fcfb52ecaf13f9affd1f58356c.setIcon(icon_21c385ef7a5c5849c8bdc6d9b4353287);
+            
+    
+            var marker_ec2faef2ce14d38176cb758748860c88 = L.marker(
+                [20.235733, 68.864119],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_ced9b296fe25e4381d82e640aeffb34b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5d49d0645d742a18450c02aa8e52829 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a7fc997691dfa4cbf5b049295674069 = $(`<div id="html_1a7fc997691dfa4cbf5b049295674069" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 20.235733°<br>Lon: 68.864119°<br>             Original X: 12019.06<br>Original Y: 3607.60<br>             Address: Not found         </div>         </div>`)[0];
+                popup_f5d49d0645d742a18450c02aa8e52829.setContent(html_1a7fc997691dfa4cbf5b049295674069);
+            
+        
+
+        marker_ec2faef2ce14d38176cb758748860c88.bindPopup(popup_f5d49d0645d742a18450c02aa8e52829)
+        ;
+
+        
+    
+    
+                marker_ec2faef2ce14d38176cb758748860c88.setIcon(icon_ced9b296fe25e4381d82e640aeffb34b);
+            
+    
+            var marker_78b69d554b0ab38302b352ec34d7fdc2 = L.marker(
+                [14.340500999999994, 82.655303],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_12d56d604665fdb5717cf5a31c76298d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f67d2f9757e482ff3a481be7252d3553 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8ea5a7f472754258df0fe93b80b9638 = $(`<div id="html_a8ea5a7f472754258df0fe93b80b9638" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 14.340501°<br>Lon: 82.655303°<br>             Original X: 14426.07<br>Original Y: 2529.44<br>             Address: Not found         </div>         </div>`)[0];
+                popup_f67d2f9757e482ff3a481be7252d3553.setContent(html_a8ea5a7f472754258df0fe93b80b9638);
+            
+        
+
+        marker_78b69d554b0ab38302b352ec34d7fdc2.bindPopup(popup_f67d2f9757e482ff3a481be7252d3553)
+        ;
+
+        
+    
+    
+                marker_78b69d554b0ab38302b352ec34d7fdc2.setIcon(icon_12d56d604665fdb5717cf5a31c76298d);
+            
+    
+            var marker_83fe25d33a52f5b3f3058365527724a0 = L.marker(
+                [8.769543, 73.766292],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_3223a52b527342418384d325ec8bfb08 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b800af1d34bad444d7fe9df0c419fca7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62ad4f59e02972d28bda1d1de0d2c586 = $(`<div id="html_62ad4f59e02972d28bda1d1de0d2c586" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 8.769543°<br>Lon: 73.766292°<br>             Original X: 12874.65<br>Original Y: 1536.59<br>             Address: Not found         </div>         </div>`)[0];
+                popup_b800af1d34bad444d7fe9df0c419fca7.setContent(html_62ad4f59e02972d28bda1d1de0d2c586);
+            
+        
+
+        marker_83fe25d33a52f5b3f3058365527724a0.bindPopup(popup_b800af1d34bad444d7fe9df0c419fca7)
+        ;
+
+        
+    
+    
+                marker_83fe25d33a52f5b3f3058365527724a0.setIcon(icon_3223a52b527342418384d325ec8bfb08);
+            
+    
+            var marker_230d3a49ad03f97c412933c18d678e34 = L.marker(
+                [26.846648999999992, 83.803303],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_c36d9b9ccedd57f0ad47dd58ffbb9523 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_62e197645adaa344cae85e3f628de4e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9164f87edd02cb368b80d41c8931534 = $(`<div id="html_d9164f87edd02cb368b80d41c8931534" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 26.846649°<br>Lon: 83.803303°<br>             Original X: 14626.44<br>Original Y: 4867.14<br>             Address: Kasya, Kushinagar, Uttar Pradesh, India         </div>         </div>`)[0];
+                popup_62e197645adaa344cae85e3f628de4e7.setContent(html_d9164f87edd02cb368b80d41c8931534);
+            
+        
+
+        marker_230d3a49ad03f97c412933c18d678e34.bindPopup(popup_62e197645adaa344cae85e3f628de4e7)
+        ;
+
+        
+    
+    
+                marker_230d3a49ad03f97c412933c18d678e34.setIcon(icon_c36d9b9ccedd57f0ad47dd58ffbb9523);
+            
+    
+            var marker_174155839fb7a555a128eec01ac2d8a1 = L.marker(
+                [14.392778, 85.088705],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_b668a64ff9ec7e28a995d407f4db1849 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5d861b10a399a986a06265358205c76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_10da6267639595acda4c8480d95f208b = $(`<div id="html_10da6267639595acda4c8480d95f208b" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 14.392778°<br>Lon: 85.088705°<br>             Original X: 14850.78<br>Original Y: 2538.86<br>             Address: Not found         </div>         </div>`)[0];
+                popup_f5d861b10a399a986a06265358205c76.setContent(html_10da6267639595acda4c8480d95f208b);
+            
+        
+
+        marker_174155839fb7a555a128eec01ac2d8a1.bindPopup(popup_f5d861b10a399a986a06265358205c76)
+        ;
+
+        
+    
+    
+                marker_174155839fb7a555a128eec01ac2d8a1.setIcon(icon_b668a64ff9ec7e28a995d407f4db1849);
+            
+    
+            var marker_015fab6f26229ab0e3c6b063ec3509b2 = L.marker(
+                [31.47348300000001, 68.188464],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_a6b89e09105376ae2dfe194eae8f5f23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2398fbe485b03c8203263385686d3b4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c22e54481dd5cf5e458624cc6888633f = $(`<div id="html_c22e54481dd5cf5e458624cc6888633f" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 31.473483°<br>Lon: 68.188464°<br>             Original X: 11901.13<br>Original Y: 5792.28<br>             Address: تحصیل کاکڑ خراسان, ضلع ژوب, ژوب ڈویژن, پاکستان         </div>         </div>`)[0];
+                popup_2398fbe485b03c8203263385686d3b4d.setContent(html_c22e54481dd5cf5e458624cc6888633f);
+            
+        
+
+        marker_015fab6f26229ab0e3c6b063ec3509b2.bindPopup(popup_2398fbe485b03c8203263385686d3b4d)
+        ;
+
+        
+    
+    
+                marker_015fab6f26229ab0e3c6b063ec3509b2.setIcon(icon_a6b89e09105376ae2dfe194eae8f5f23);
+            
+    
+            var marker_657fd49a8dd0a050a70d07fae60138a5 = L.marker(
+                [31.368758000000007, 88.246042],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_b5345c8dd162314042559b0f0471cef0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b1302ae4111d3efa588e518ee088133 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f9ad9d02d59389b9f360ca8e5be1114b = $(`<div id="html_f9ad9d02d59389b9f360ca8e5be1114b" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 31.368758°<br>Lon: 88.246042°<br>             Original X: 15401.84<br>Original Y: 5770.86<br>             Address: 申扎镇, 申扎县 ཤན་རྩ་རྫོང།, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国         </div>         </div>`)[0];
+                popup_5b1302ae4111d3efa588e518ee088133.setContent(html_f9ad9d02d59389b9f360ca8e5be1114b);
+            
+        
+
+        marker_657fd49a8dd0a050a70d07fae60138a5.bindPopup(popup_5b1302ae4111d3efa588e518ee088133)
+        ;
+
+        
+    
+    
+                marker_657fd49a8dd0a050a70d07fae60138a5.setIcon(icon_b5345c8dd162314042559b0f0471cef0);
+            
+    
+            var marker_1be5bcf186d3bd62ef1741d76faa715e = L.marker(
+                [17.867265000000007, 72.508905],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_96d0b89b87c5f6a7834ee6ce4a532751 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57fc5c70e260d2b0a0005df140d51186 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8783a726805e82d33781b6e8f32ad014 = $(`<div id="html_8783a726805e82d33781b6e8f32ad014" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 17.867265°<br>Lon: 72.508905°<br>             Original X: 12655.19<br>Original Y: 3170.23<br>             Address: Not found         </div>         </div>`)[0];
+                popup_57fc5c70e260d2b0a0005df140d51186.setContent(html_8783a726805e82d33781b6e8f32ad014);
+            
+        
+
+        marker_1be5bcf186d3bd62ef1741d76faa715e.bindPopup(popup_57fc5c70e260d2b0a0005df140d51186)
+        ;
+
+        
+    
+    
+                marker_1be5bcf186d3bd62ef1741d76faa715e.setIcon(icon_96d0b89b87c5f6a7834ee6ce4a532751);
+            
+    
+            var marker_98ab98177efedcc3d4895e3f98df3550 = L.marker(
+                [35.759179, 77.761242],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_fe2540fb61dd3133c3720cd19cd1987b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b040fee26633d6f4d0ecaa519d00dc4e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_858ac38a0e881af239a9b1554f85c047 = $(`<div id="html_858ac38a0e881af239a9b1554f85c047" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 35.759179°<br>Lon: 77.761242°<br>             Original X: 13571.90<br>Original Y: 6690.88<br>             Address: 叶城县 قاغىلىق ناھىيىسى, 喀什地区 قەشقەر ۋىلايىتى, 新疆维吾尔自治区 شىنجاڭ ئۇيغۇر ئاپتونوم رايونی, 844900, 中国         </div>         </div>`)[0];
+                popup_b040fee26633d6f4d0ecaa519d00dc4e.setContent(html_858ac38a0e881af239a9b1554f85c047);
+            
+        
+
+        marker_98ab98177efedcc3d4895e3f98df3550.bindPopup(popup_b040fee26633d6f4d0ecaa519d00dc4e)
+        ;
+
+        
+    
+    
+                marker_98ab98177efedcc3d4895e3f98df3550.setIcon(icon_fe2540fb61dd3133c3720cd19cd1987b);
+            
+    
+            var marker_02923aa697aef121501633b7906cb110 = L.marker(
+                [10.689629000000005, 70.804775],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_5a05f01c723a6294cf4745c4637fd1cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5e372d609e0a5820687613c0f51e9df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7311123c2866fe61a854314c0520120a = $(`<div id="html_7311123c2866fe61a854314c0520120a" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 10.689629°<br>Lon: 70.804775°<br>             Original X: 12357.76<br>Original Y: 1876.61<br>             Address: Not found         </div>         </div>`)[0];
+                popup_e5e372d609e0a5820687613c0f51e9df.setContent(html_7311123c2866fe61a854314c0520120a);
+            
+        
+
+        marker_02923aa697aef121501633b7906cb110.bindPopup(popup_e5e372d609e0a5820687613c0f51e9df)
+        ;
+
+        
+    
+    
+                marker_02923aa697aef121501633b7906cb110.setIcon(icon_5a05f01c723a6294cf4745c4637fd1cd);
+            
+    
+            var marker_04823373aa339b9784e33e20a2124f6f = L.marker(
+                [32.577336999999986, 85.508055],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_6d8b6ce73e8ceebf9285793f8cb99fbc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d291e07ce43bb48773bdab4de2253c3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d898a971d7e27b0da2b45ebc7498c31c = $(`<div id="html_d898a971d7e27b0da2b45ebc7498c31c" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 32.577337°<br>Lon: 85.508055°<br>             Original X: 14923.97<br>Original Y: 6019.53<br>             Address: 中仓乡, 尼玛县 ཉི་མ་རྫོང།, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国         </div>         </div>`)[0];
+                popup_d291e07ce43bb48773bdab4de2253c3c.setContent(html_d898a971d7e27b0da2b45ebc7498c31c);
+            
+        
+
+        marker_04823373aa339b9784e33e20a2124f6f.bindPopup(popup_d291e07ce43bb48773bdab4de2253c3c)
+        ;
+
+        
+    
+    
+                marker_04823373aa339b9784e33e20a2124f6f.setIcon(icon_6d8b6ce73e8ceebf9285793f8cb99fbc);
+            
+    
+            var marker_cc3747a1567e585c9724974e5d14efe6 = L.marker(
+                [31.40671999999999, 89.162222],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_a7fc453fe3adcafbde3c4dd60ce154ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_751bab15399e5b9c24fafd5fffcca790 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd191d40efabdac2aa6405b6484d1cd5 = $(`<div id="html_cd191d40efabdac2aa6405b6484d1cd5" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 31.406720°<br>Lon: 89.162222°<br>             Original X: 15561.74<br>Original Y: 5778.62<br>             Address: 雄梅镇, 申扎县 ཤན་རྩ་རྫོང།, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国         </div>         </div>`)[0];
+                popup_751bab15399e5b9c24fafd5fffcca790.setContent(html_cd191d40efabdac2aa6405b6484d1cd5);
+            
+        
+
+        marker_cc3747a1567e585c9724974e5d14efe6.bindPopup(popup_751bab15399e5b9c24fafd5fffcca790)
+        ;
+
+        
+    
+    
+                marker_cc3747a1567e585c9724974e5d14efe6.setIcon(icon_a7fc453fe3adcafbde3c4dd60ce154ba);
+            
+    
+            var marker_66a7fe75ed498af998200daafc870b11 = L.marker(
+                [23.550615, 96.220357],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_73fd6b2d6f42c8df3684766b61d7e2ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d046c1686a442e99cfa18d1703f8177f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5fec3bc0b8749c259a8dcdd0658488e = $(`<div id="html_e5fec3bc0b8749c259a8dcdd0658488e" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 23.550615°<br>Lon: 96.220357°<br>             Original X: 16793.62<br>Original Y: 4231.24<br>             Address: ပြင်ဦးလွင်ခရိုင်, သပိတ်ကျင်းခရိုင်, မန္တလေးတိုင်း, မြန်မာ         </div>         </div>`)[0];
+                popup_d046c1686a442e99cfa18d1703f8177f.setContent(html_e5fec3bc0b8749c259a8dcdd0658488e);
+            
+        
+
+        marker_66a7fe75ed498af998200daafc870b11.bindPopup(popup_d046c1686a442e99cfa18d1703f8177f)
+        ;
+
+        
+    
+    
+                marker_66a7fe75ed498af998200daafc870b11.setIcon(icon_73fd6b2d6f42c8df3684766b61d7e2ff);
+            
+    
+            var marker_cdfb54778f60000df48adccbf0e0e337 = L.marker(
+                [18.977497000000003, 84.009178],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_9e4e4b07919691bda0690e6a55b9ee8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba286ca591e429e44d6b917624de7d40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3960e73577da598f6c4718085033df9 = $(`<div id="html_e3960e73577da598f6c4718085033df9" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 18.977497°<br>Lon: 84.009178°<br>             Original X: 14662.37<br>Original Y: 3374.48<br>             Address: Serango, Gajapati, Odisha, India         </div>         </div>`)[0];
+                popup_ba286ca591e429e44d6b917624de7d40.setContent(html_e3960e73577da598f6c4718085033df9);
+            
+        
+
+        marker_cdfb54778f60000df48adccbf0e0e337.bindPopup(popup_ba286ca591e429e44d6b917624de7d40)
+        ;
+
+        
+    
+    
+                marker_cdfb54778f60000df48adccbf0e0e337.setIcon(icon_9e4e4b07919691bda0690e6a55b9ee8a);
+            
+    
+            var marker_4cb72f7d4c7c2816abcda67ed619c08a = L.marker(
+                [32.05273499999999, 85.937073],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_9476073a7250e2c39f6f479c027ba3ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_93a3baf4392dc6ad1e796b039d4a8719 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0379a2a534b058e91c7f7f585a411f7f = $(`<div id="html_0379a2a534b058e91c7f7f585a411f7f" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 32.052735°<br>Lon: 85.937073°<br>             Original X: 14998.85<br>Original Y: 5911.19<br>             Address: 阿索乡, 尼玛县 ཉི་མ་རྫོང།, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国         </div>         </div>`)[0];
+                popup_93a3baf4392dc6ad1e796b039d4a8719.setContent(html_0379a2a534b058e91c7f7f585a411f7f);
+            
+        
+
+        marker_4cb72f7d4c7c2816abcda67ed619c08a.bindPopup(popup_93a3baf4392dc6ad1e796b039d4a8719)
+        ;
+
+        
+    
+    
+                marker_4cb72f7d4c7c2816abcda67ed619c08a.setIcon(icon_9476073a7250e2c39f6f479c027ba3ee);
+            
+    
+            var marker_4810b5ccad5a2aef80107a4a94bd0d17 = L.marker(
+                [32.98949999999999, 84.743212],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_8a7b8e947471ba9863f7af75655209bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c7fe5e40e145c4e109ebf98d81b69f38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d5ed6b61493fb9391d99b7c036a0d0c = $(`<div id="html_2d5ed6b61493fb9391d99b7c036a0d0c" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 32.989500°<br>Lon: 84.743212°<br>             Original X: 14790.48<br>Original Y: 6105.09<br>             Address: 察布乡, 改则县 སྒེར་རྩེ་རྫོང་།, 阿里地区 མངའ་རིས་ས་ཁུལ་, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国         </div>         </div>`)[0];
+                popup_c7fe5e40e145c4e109ebf98d81b69f38.setContent(html_2d5ed6b61493fb9391d99b7c036a0d0c);
+            
+        
+
+        marker_4810b5ccad5a2aef80107a4a94bd0d17.bindPopup(popup_c7fe5e40e145c4e109ebf98d81b69f38)
+        ;
+
+        
+    
+    
+                marker_4810b5ccad5a2aef80107a4a94bd0d17.setIcon(icon_8a7b8e947471ba9863f7af75655209bf);
+            
+    
+            var marker_c6c66d8594c6141bca8d216dc463936a = L.marker(
+                [28.432582999999997, 69.328907],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_262a9d02960f70c3a08e23c3df286179 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b246dfee09c53914dfe3285089332e04 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_806ee0595622fa44b7153a0c5f66e441 = $(`<div id="html_806ee0595622fa44b7153a0c5f66e441" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 28.432583°<br>Lon: 69.328907°<br>             Original X: 12100.18<br>Original Y: 5179.60<br>             Address: بخشاپور, تعلقہ کشمور, ضلع کشمور, پاکستان         </div>         </div>`)[0];
+                popup_b246dfee09c53914dfe3285089332e04.setContent(html_806ee0595622fa44b7153a0c5f66e441);
+            
+        
+
+        marker_c6c66d8594c6141bca8d216dc463936a.bindPopup(popup_b246dfee09c53914dfe3285089332e04)
+        ;
+
+        
+    
+    
+                marker_c6c66d8594c6141bca8d216dc463936a.setIcon(icon_262a9d02960f70c3a08e23c3df286179);
+            
+    
+            var marker_6f882d66ae1b22a91fe2748402bc2f43 = L.marker(
+                [14.609050000000003, 76.392251],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_b110e967a942c9cfea7c219a27e6f4e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f74bcf343c4bbc1dfe5edf25bb7d378 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0ddce8252cca30958732f47500a286a = $(`<div id="html_e0ddce8252cca30958732f47500a286a" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 14.609050°<br>Lon: 76.392251°<br>             Original X: 13332.96<br>Original Y: 2577.85<br>             Address: Jyotipura, Jagaluru taluku, Davanagere, Karnataka, India         </div>         </div>`)[0];
+                popup_1f74bcf343c4bbc1dfe5edf25bb7d378.setContent(html_e0ddce8252cca30958732f47500a286a);
+            
+        
+
+        marker_6f882d66ae1b22a91fe2748402bc2f43.bindPopup(popup_1f74bcf343c4bbc1dfe5edf25bb7d378)
+        ;
+
+        
+    
+    
+                marker_6f882d66ae1b22a91fe2748402bc2f43.setIcon(icon_b110e967a942c9cfea7c219a27e6f4e4);
+            
+    
+            var marker_a25dfaf72b81053dcb58e0d88861f2b5 = L.marker(
+                [10.313967000000007, 74.750936],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_2d682b1efd06db23586c0442da7979cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af0bea8561108190e373620b8dc9ce53 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e840cbedd34f830b07447c613945c6d = $(`<div id="html_6e840cbedd34f830b07447c613945c6d" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 10.313967°<br>Lon: 74.750936°<br>             Original X: 13046.50<br>Original Y: 1809.93<br>             Address: Not found         </div>         </div>`)[0];
+                popup_af0bea8561108190e373620b8dc9ce53.setContent(html_6e840cbedd34f830b07447c613945c6d);
+            
+        
+
+        marker_a25dfaf72b81053dcb58e0d88861f2b5.bindPopup(popup_af0bea8561108190e373620b8dc9ce53)
+        ;
+
+        
+    
+    
+                marker_a25dfaf72b81053dcb58e0d88861f2b5.setIcon(icon_2d682b1efd06db23586c0442da7979cb);
+            
+    
+            var marker_9c0a83963e4144038ca6a0314b4fe91f = L.marker(
+                [10.929041000000007, 76.061234],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_88afaf3248b2e0e9b6640726a8a5a133 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19dbcd2c0e174e11a813f2461560a943 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95f14c2fd06c487a81a6b9260b0f7441 = $(`<div id="html_95f14c2fd06c487a81a6b9260b0f7441" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 10.929041°<br>Lon: 76.061234°<br>             Original X: 13275.19<br>Original Y: 1919.15<br>             Address: Tirur, Malappuram, Kerala, 676553, India         </div>         </div>`)[0];
+                popup_19dbcd2c0e174e11a813f2461560a943.setContent(html_95f14c2fd06c487a81a6b9260b0f7441);
+            
+        
+
+        marker_9c0a83963e4144038ca6a0314b4fe91f.bindPopup(popup_19dbcd2c0e174e11a813f2461560a943)
+        ;
+
+        
+    
+    
+                marker_9c0a83963e4144038ca6a0314b4fe91f.setIcon(icon_88afaf3248b2e0e9b6640726a8a5a133);
+            
+    
+            var marker_2d1ff445778524ca61829f550cba26f8 = L.marker(
+                [26.434848999999996, 78.580133],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_1dad11dbd7a966bc78f62969a8e6d0fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b0269af6e27eca250688418a9b465c01 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f8b315625cda5ecca32b1bc6d4033e4 = $(`<div id="html_8f8b315625cda5ecca32b1bc6d4033e4" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 26.434849°<br>Lon: 78.580133°<br>             Original X: 13714.82<br>Original Y: 4786.73<br>             Address: Dhanoli, Mehgaon Tahsil, Bhind, Madhya Pradesh, India         </div>         </div>`)[0];
+                popup_b0269af6e27eca250688418a9b465c01.setContent(html_8f8b315625cda5ecca32b1bc6d4033e4);
+            
+        
+
+        marker_2d1ff445778524ca61829f550cba26f8.bindPopup(popup_b0269af6e27eca250688418a9b465c01)
+        ;
+
+        
+    
+    
+                marker_2d1ff445778524ca61829f550cba26f8.setIcon(icon_1dad11dbd7a966bc78f62969a8e6d0fb);
+            
+    
+            var marker_7462fecac3e71c128fc5154e067da81d = L.marker(
+                [18.735247999999995, 74.075704],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_953748acc8cc919cd72a99273f6cfb2e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dcae4fcd238f4e5fd4b8e36180caed06 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05cb72c05388cb00f114625fd7e774d2 = $(`<div id="html_05cb72c05388cb00f114625fd7e774d2" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 18.735248°<br>Lon: 74.075704°<br>             Original X: 12928.65<br>Original Y: 3329.80<br>             Address: Shirur, Pune, Maharashtra, India         </div>         </div>`)[0];
+                popup_dcae4fcd238f4e5fd4b8e36180caed06.setContent(html_05cb72c05388cb00f114625fd7e774d2);
+            
+        
+
+        marker_7462fecac3e71c128fc5154e067da81d.bindPopup(popup_dcae4fcd238f4e5fd4b8e36180caed06)
+        ;
+
+        
+    
+    
+                marker_7462fecac3e71c128fc5154e067da81d.setIcon(icon_953748acc8cc919cd72a99273f6cfb2e);
+            
+    
+            var marker_8b69550da459f705da9dd170f90f1d4f = L.marker(
+                [15.742356999999995, 95.16298299999998],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_dbfd55d4e9c64725323e6fa314797479 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9573065649a96ebdb755cea9c93b27e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8852f06dfe104974fee69cc8fad8e21f = $(`<div id="html_8852f06dfe104974fee69cc8fad8e21f" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 15.742357°<br>Lon: 95.162983°<br>             Original X: 16609.07<br>Original Y: 2782.80<br>             Address: Taun Yar (တောင်ယာ), ဘိုကလေးမြို့နယ်, ဖျာပုံခရိုင်, ဧရာဝတီတိုင်းဒေသကြီး, မြန်မာ         </div>         </div>`)[0];
+                popup_9573065649a96ebdb755cea9c93b27e6.setContent(html_8852f06dfe104974fee69cc8fad8e21f);
+            
+        
+
+        marker_8b69550da459f705da9dd170f90f1d4f.bindPopup(popup_9573065649a96ebdb755cea9c93b27e6)
+        ;
+
+        
+    
+    
+                marker_8b69550da459f705da9dd170f90f1d4f.setIcon(icon_dbfd55d4e9c64725323e6fa314797479);
+            
+    
+            var marker_932efcf66ec2a4767f96a5f050194ecc = L.marker(
+                [26.793025999999994, 85.664799],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_bd37cda801dbdc941da41b3dfa8d1d39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3f8c29fc8c74c82c3f25110d53c4100 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_027376a7f800d3a3614027bb75c24390 = $(`<div id="html_027376a7f800d3a3614027bb75c24390" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 26.793026°<br>Lon: 85.664799°<br>             Original X: 14951.33<br>Original Y: 4856.65<br>             Address: Parihar, Sitamarhi, Bihar, India         </div>         </div>`)[0];
+                popup_b3f8c29fc8c74c82c3f25110d53c4100.setContent(html_027376a7f800d3a3614027bb75c24390);
+            
+        
+
+        marker_932efcf66ec2a4767f96a5f050194ecc.bindPopup(popup_b3f8c29fc8c74c82c3f25110d53c4100)
+        ;
+
+        
+    
+    
+                marker_932efcf66ec2a4767f96a5f050194ecc.setIcon(icon_bd37cda801dbdc941da41b3dfa8d1d39);
+            
+    
+            var marker_43856d1d5d1ff45550c7a2e7858d59ec = L.marker(
+                [12.963020999999994, 89.144677],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_3ad878bf5c50dd24705b4464743a0dc1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d326f00b1489073c467078e1dd3c31b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_108afa4f94115c1f72ec99d3c5e0d353 = $(`<div id="html_108afa4f94115c1f72ec99d3c5e0d353" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 12.963021°<br>Lon: 89.144677°<br>             Original X: 15558.68<br>Original Y: 2282.03<br>             Address: Not found         </div>         </div>`)[0];
+                popup_4d326f00b1489073c467078e1dd3c31b.setContent(html_108afa4f94115c1f72ec99d3c5e0d353);
+            
+        
+
+        marker_43856d1d5d1ff45550c7a2e7858d59ec.bindPopup(popup_4d326f00b1489073c467078e1dd3c31b)
+        ;
+
+        
+    
+    
+                marker_43856d1d5d1ff45550c7a2e7858d59ec.setIcon(icon_3ad878bf5c50dd24705b4464743a0dc1);
+            
+    
+            var marker_373f2809ca7ec45643b63e24da7fbce5 = L.marker(
+                [12.738671999999987, 79.004208],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_e606f2c5b7b8ae765e202c81c39c1ff3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5fa820a3c6b858952c775b5298775457 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_91e0b40cfd79d91809144646bd401ce9 = $(`<div id="html_91e0b40cfd79d91809144646bd401ce9" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 12.738672°<br>Lon: 79.004208°<br>             Original X: 13788.84<br>Original Y: 2241.86<br>             Address: Sarathankolai, Vellore, Tamil Nadu, India         </div>         </div>`)[0];
+                popup_5fa820a3c6b858952c775b5298775457.setContent(html_91e0b40cfd79d91809144646bd401ce9);
+            
+        
+
+        marker_373f2809ca7ec45643b63e24da7fbce5.bindPopup(popup_5fa820a3c6b858952c775b5298775457)
+        ;
+
+        
+    
+    
+                marker_373f2809ca7ec45643b63e24da7fbce5.setIcon(icon_e606f2c5b7b8ae765e202c81c39c1ff3);
+            
+    
+            var marker_47e7d769f227c78e557138f41fd55554 = L.marker(
+                [36.696177000000006, 86.559993],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_9bf5f261e07800935d1b6f56f11a3f5e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0da139b913716b7170e0d3f0ff5356b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a80d27b9f394e71aef92aa7964a5316a = $(`<div id="html_a80d27b9f394e71aef92aa7964a5316a" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 36.696177°<br>Lon: 86.559993°<br>             Original X: 15107.57<br>Original Y: 6893.61<br>             Address: 库拉木勒克乡 قوراملىق يېزىسى, 且末县, 巴音郭楞蒙古自治州 بايىنغولىن موڭغۇل ئاپتونوم ئوبلاستى, 新疆维吾尔自治区 شىنجاڭ ئۇيغۇر ئاپتونوم رايونی, 中国         </div>         </div>`)[0];
+                popup_0da139b913716b7170e0d3f0ff5356b0.setContent(html_a80d27b9f394e71aef92aa7964a5316a);
+            
+        
+
+        marker_47e7d769f227c78e557138f41fd55554.bindPopup(popup_0da139b913716b7170e0d3f0ff5356b0)
+        ;
+
+        
+    
+    
+                marker_47e7d769f227c78e557138f41fd55554.setIcon(icon_9bf5f261e07800935d1b6f56f11a3f5e);
+            
+    
+            var marker_15bd83115acb73b9a66031d3088691df = L.marker(
+                [24.151542999999993, 87.853813],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_8c451642fc9a52c4a317cd3ce253504d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c0105eab7127d929d46fa11e3228328 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b6eee707052ad9c7838a799f165d3fe = $(`<div id="html_7b6eee707052ad9c7838a799f165d3fe" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 24.151543°<br>Lon: 87.853813°<br>             Original X: 15333.38<br>Original Y: 4345.92<br>             Address: Margram, Rampurhat - II, Birbhum, West Bengal, 731203, India         </div>         </div>`)[0];
+                popup_1c0105eab7127d929d46fa11e3228328.setContent(html_7b6eee707052ad9c7838a799f165d3fe);
+            
+        
+
+        marker_15bd83115acb73b9a66031d3088691df.bindPopup(popup_1c0105eab7127d929d46fa11e3228328)
+        ;
+
+        
+    
+    
+                marker_15bd83115acb73b9a66031d3088691df.setIcon(icon_8c451642fc9a52c4a317cd3ce253504d);
+            
+    
+            var marker_3944f9c4fef63d572200a64082a9f92a = L.marker(
+                [32.44270600000001, 90.503997],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_342937ec70f2c3997793007f3f077da6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44fd2563a1ccbac0478eba00b9ab2fd3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a4400b504e4a582e16c561f548d346b = $(`<div id="html_9a4400b504e4a582e16c561f548d346b" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 32.442706°<br>Lon: 90.503997°<br>             Original X: 15795.93<br>Original Y: 5991.66<br>             Address: 扎曲乡, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国         </div>         </div>`)[0];
+                popup_44fd2563a1ccbac0478eba00b9ab2fd3.setContent(html_9a4400b504e4a582e16c561f548d346b);
+            
+        
+
+        marker_3944f9c4fef63d572200a64082a9f92a.bindPopup(popup_44fd2563a1ccbac0478eba00b9ab2fd3)
+        ;
+
+        
+    
+    
+                marker_3944f9c4fef63d572200a64082a9f92a.setIcon(icon_342937ec70f2c3997793007f3f077da6);
+            
+    
+            var marker_f0dd0195e27bef413217e0f8f4721e10 = L.marker(
+                [14.642394000000007, 68.930907],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_dfcdfc4c18e54ab93467288e475d0e1a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f757ac589d6f4aabb70d324a32df8841 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ca70b3fd317cca5920ef2b9d246d0ab = $(`<div id="html_1ca70b3fd317cca5920ef2b9d246d0ab" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 14.642394°<br>Lon: 68.930907°<br>             Original X: 12030.71<br>Original Y: 2583.86<br>             Address: Not found         </div>         </div>`)[0];
+                popup_f757ac589d6f4aabb70d324a32df8841.setContent(html_1ca70b3fd317cca5920ef2b9d246d0ab);
+            
+        
+
+        marker_f0dd0195e27bef413217e0f8f4721e10.bindPopup(popup_f757ac589d6f4aabb70d324a32df8841)
+        ;
+
+        
+    
+    
+                marker_f0dd0195e27bef413217e0f8f4721e10.setIcon(icon_dfcdfc4c18e54ab93467288e475d0e1a);
+            
+    
+            var marker_23c830a79846dc3bc5e94f4706d0941b = L.marker(
+                [17.148137999999992, 75.764485],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_7f2c76e374910c0434547894e7ece5f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5c0e8f57db8553b06c049360719cc90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef4dd659bb15f2fb719574f7aa8c2c9b = $(`<div id="html_ef4dd659bb15f2fb719574f7aa8c2c9b" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 17.148138°<br>Lon: 75.764485°<br>             Original X: 13223.40<br>Original Y: 3038.62<br>             Address: Sonakanahalli, Indi taluku, Vijayapura, Karnataka, India         </div>         </div>`)[0];
+                popup_b5c0e8f57db8553b06c049360719cc90.setContent(html_ef4dd659bb15f2fb719574f7aa8c2c9b);
+            
+        
+
+        marker_23c830a79846dc3bc5e94f4706d0941b.bindPopup(popup_b5c0e8f57db8553b06c049360719cc90)
+        ;
+
+        
+    
+    
+                marker_23c830a79846dc3bc5e94f4706d0941b.setIcon(icon_7f2c76e374910c0434547894e7ece5f3);
+            
+    
+            var marker_fc12e471cc013653c33a7ab6052d010c = L.marker(
+                [14.118502000000005, 95.34438200000001],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_b8357fa8fe17ab55945dc0ba1afbac9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d792e2fb8d4c612f59953e4643684867 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be43509fc9f201afe8b26908ae666e62 = $(`<div id="html_be43509fc9f201afe8b26908ae666e62" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 14.118502°<br>Lon: 95.344382°<br>             Original X: 16640.73<br>Original Y: 2489.47<br>             Address: Not found         </div>         </div>`)[0];
+                popup_d792e2fb8d4c612f59953e4643684867.setContent(html_be43509fc9f201afe8b26908ae666e62);
+            
+        
+
+        marker_fc12e471cc013653c33a7ab6052d010c.bindPopup(popup_d792e2fb8d4c612f59953e4643684867)
+        ;
+
+        
+    
+    
+                marker_fc12e471cc013653c33a7ab6052d010c.setIcon(icon_b8357fa8fe17ab55945dc0ba1afbac9a);
+            
+    
+            var marker_048c5e7c92b12a5c5a16e167b20c1075 = L.marker(
+                [33.41466099999999, 77.125659],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_358c72a60b12390c66c61b3dbf9813d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2383a0d33fa500af93f0f71789fd8d2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d955be442bdb03a7130140b4267e8925 = $(`<div id="html_d955be442bdb03a7130140b4267e8925" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 33.414661°<br>Lon: 77.125659°<br>             Original X: 13460.97<br>Original Y: 6193.77<br>             Address: Salang Tatak, Zanskar, Ladakh, India         </div>         </div>`)[0];
+                popup_2383a0d33fa500af93f0f71789fd8d2f.setContent(html_d955be442bdb03a7130140b4267e8925);
+            
+        
+
+        marker_048c5e7c92b12a5c5a16e167b20c1075.bindPopup(popup_2383a0d33fa500af93f0f71789fd8d2f)
+        ;
+
+        
+    
+    
+                marker_048c5e7c92b12a5c5a16e167b20c1075.setIcon(icon_358c72a60b12390c66c61b3dbf9813d5);
+            
+    
+            var marker_bc382f59028cc0932a69424693ad0a4b = L.marker(
+                [27.007720999999997, 79.473325],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_4dd0b217b62f038e7b55e3f1e1e01d1b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_036c1ab9bfb9198ab81e5e88db25f7dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f726203f20014dab03335884362366c = $(`<div id="html_8f726203f20014dab03335884362366c" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 27.007721°<br>Lon: 79.473325°<br>             Original X: 13870.71<br>Original Y: 4898.67<br>             Address: Saurikh, Chhibramau, Kannauj, Uttar Pradesh, India         </div>         </div>`)[0];
+                popup_036c1ab9bfb9198ab81e5e88db25f7dc.setContent(html_8f726203f20014dab03335884362366c);
+            
+        
+
+        marker_bc382f59028cc0932a69424693ad0a4b.bindPopup(popup_036c1ab9bfb9198ab81e5e88db25f7dc)
+        ;
+
+        
+    
+    
+                marker_bc382f59028cc0932a69424693ad0a4b.setIcon(icon_4dd0b217b62f038e7b55e3f1e1e01d1b);
+            
+    
+            var marker_559b86d8d8a59ec30809e75a18bf19ed = L.marker(
+                [34.521879999999996, 81.306704],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_feb26766e43f3ea38df40754d316c293 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1010badf23efe722c8b77997e0d9d3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8d90e7dd497a2241515656cfb4ba2df = $(`<div id="html_e8d90e7dd497a2241515656cfb4ba2df" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 34.521880°<br>Lon: 81.306704°<br>             Original X: 14190.70<br>Original Y: 6426.79<br>             Address: 东汝乡, 日土县 རུ་ཐོག་རྫོང་, 阿里地区 མངའ་རིས་ས་ཁུལ་, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国         </div>         </div>`)[0];
+                popup_b1010badf23efe722c8b77997e0d9d3c.setContent(html_e8d90e7dd497a2241515656cfb4ba2df);
+            
+        
+
+        marker_559b86d8d8a59ec30809e75a18bf19ed.bindPopup(popup_b1010badf23efe722c8b77997e0d9d3c)
+        ;
+
+        
+    
+    
+                marker_559b86d8d8a59ec30809e75a18bf19ed.setIcon(icon_feb26766e43f3ea38df40754d316c293);
+            
+    
+            var marker_616b8c50437d3b59776edcbb76667516 = L.marker(
+                [15.681525000000004, 75.152198],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_792e096a225f08c4a4cc8b64e164fde7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19bcfc464d28a4ea130ae6f3c92a208e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c76f593b154f50b85bbee5a564e8df46 = $(`<div id="html_c76f593b154f50b85bbee5a564e8df46" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 15.681525°<br>Lon: 75.152198°<br>             Original X: 13116.53<br>Original Y: 2771.77<br>             Address: Savadatti taluku, Belagavi, Karnataka, India         </div>         </div>`)[0];
+                popup_19bcfc464d28a4ea130ae6f3c92a208e.setContent(html_c76f593b154f50b85bbee5a564e8df46);
+            
+        
+
+        marker_616b8c50437d3b59776edcbb76667516.bindPopup(popup_19bcfc464d28a4ea130ae6f3c92a208e)
+        ;
+
+        
+    
+    
+                marker_616b8c50437d3b59776edcbb76667516.setIcon(icon_792e096a225f08c4a4cc8b64e164fde7);
+            
+    
+            var marker_675ef8e15b790dbc71691b44963b285b = L.marker(
+                [24.279675999999995, 75.619507],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_6f711c36bcec2c7db7f825ddba700124 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be97dee9faee8ca06318b917c61d10e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ffe8f1e63e0e59e129543663c75f65e3 = $(`<div id="html_ffe8f1e63e0e59e129543663c75f65e3" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 24.279676°<br>Lon: 75.619507°<br>             Original X: 13198.09<br>Original Y: 4370.44<br>             Address: MD2204, Bardiya Amra, Khajuri Runda, Garoth Tahsil, Mandsaur, Madhya Pradesh, 458880, India         </div>         </div>`)[0];
+                popup_be97dee9faee8ca06318b917c61d10e7.setContent(html_ffe8f1e63e0e59e129543663c75f65e3);
+            
+        
+
+        marker_675ef8e15b790dbc71691b44963b285b.bindPopup(popup_be97dee9faee8ca06318b917c61d10e7)
+        ;
+
+        
+    
+    
+                marker_675ef8e15b790dbc71691b44963b285b.setIcon(icon_6f711c36bcec2c7db7f825ddba700124);
+            
+    
+            var marker_bbe38c1b3dc20978c1c38275e24a0460 = L.marker(
+                [24.952994000000007, 94.036864],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_63d514466920259932756c43206593a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f466fdce8db1ab55267fc2fe97e9f838 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce0dc7506b1c658f44b10bb6d821e1be = $(`<div id="html_ce0dc7506b1c658f44b10bb6d821e1be" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 24.952994°<br>Lon: 94.036864°<br>             Original X: 16412.53<br>Original Y: 4499.70<br>             Address: Uyumpok, Sawombung, Imphal East, Manipur, 795114, India         </div>         </div>`)[0];
+                popup_f466fdce8db1ab55267fc2fe97e9f838.setContent(html_ce0dc7506b1c658f44b10bb6d821e1be);
+            
+        
+
+        marker_bbe38c1b3dc20978c1c38275e24a0460.bindPopup(popup_f466fdce8db1ab55267fc2fe97e9f838)
+        ;
+
+        
+    
+    
+                marker_bbe38c1b3dc20978c1c38275e24a0460.setIcon(icon_63d514466920259932756c43206593a0);
+            
+    
+            var marker_ea11b1d41d5942ecbbf0990bd0e6a086 = L.marker(
+                [19.582615, 74.360302],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_5805faf198b979fbfaee52df65da4902 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fcfbab905273afd360ca4a32ae1e6b67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca48c4a223cb16d607a5c6be18e79e4e = $(`<div id="html_ca48c4a223cb16d607a5c6be18e79e4e" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 19.582615°<br>Lon: 74.360302°<br>             Original X: 12978.32<br>Original Y: 3486.36<br>             Address: Sangamner, Ahmednagar, Maharashtra, India         </div>         </div>`)[0];
+                popup_fcfbab905273afd360ca4a32ae1e6b67.setContent(html_ca48c4a223cb16d607a5c6be18e79e4e);
+            
+        
+
+        marker_ea11b1d41d5942ecbbf0990bd0e6a086.bindPopup(popup_fcfbab905273afd360ca4a32ae1e6b67)
+        ;
+
+        
+    
+    
+                marker_ea11b1d41d5942ecbbf0990bd0e6a086.setIcon(icon_5805faf198b979fbfaee52df65da4902);
+            
+    
+            var marker_0459a03ccf64ffd9c12c2d4113a547af = L.marker(
+                [36.928591, 82.776263],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_a6d425c79855492c2c82db34b1f94d24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0e14c68062efbe322bf3ba2aa0c1b0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53cdd155fe3baf52ca35e0ae6affa03e = $(`<div id="html_53cdd155fe3baf52ca35e0ae6affa03e" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 36.928591°<br>Lon: 82.776263°<br>             Original X: 14447.18<br>Original Y: 6944.28<br>             Address: 民丰县 نىيە, 民丰县 نىيە ناھىيىسى, 和田地区 خوتەن ۋىلايىتى, 新疆维吾尔自治区 شىنجاڭ ئۇيغۇر ئاپتونوم رايونی, 中国         </div>         </div>`)[0];
+                popup_e0e14c68062efbe322bf3ba2aa0c1b0a.setContent(html_53cdd155fe3baf52ca35e0ae6affa03e);
+            
+        
+
+        marker_0459a03ccf64ffd9c12c2d4113a547af.bindPopup(popup_e0e14c68062efbe322bf3ba2aa0c1b0a)
+        ;
+
+        
+    
+    
+                marker_0459a03ccf64ffd9c12c2d4113a547af.setIcon(icon_a6d425c79855492c2c82db34b1f94d24);
+            
+    
+            var marker_7689368eb9f833374428654b89dd1ccc = L.marker(
+                [10.636372999999997, 69.366375],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_273a0c28448347bb73c05afe0c52af71 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b76fad67e3c842ccb0d16c02032aea2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_958030bb9b8b07261a43052677a21507 = $(`<div id="html_958030bb9b8b07261a43052677a21507" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 10.636373°<br>Lon: 69.366375°<br>             Original X: 12106.72<br>Original Y: 1867.15<br>             Address: Not found         </div>         </div>`)[0];
+                popup_b76fad67e3c842ccb0d16c02032aea2d.setContent(html_958030bb9b8b07261a43052677a21507);
+            
+        
+
+        marker_7689368eb9f833374428654b89dd1ccc.bindPopup(popup_b76fad67e3c842ccb0d16c02032aea2d)
+        ;
+
+        
+    
+    
+                marker_7689368eb9f833374428654b89dd1ccc.setIcon(icon_273a0c28448347bb73c05afe0c52af71);
+            
+    
+            var marker_15098fd340522226f8c32cf6a3c4b05c = L.marker(
+                [11.179825, 86.195935],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_e68a2e387fc9d9ddff7d9bb188c38f0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5fc077dfc074a680f35a356c459c3a68 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_76d3661d2d92428a7d9a4bce60c2962e = $(`<div id="html_76d3661d2d92428a7d9a4bce60c2962e" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 11.179825°<br>Lon: 86.195935°<br>             Original X: 15044.03<br>Original Y: 1963.75<br>             Address: Not found         </div>         </div>`)[0];
+                popup_5fc077dfc074a680f35a356c459c3a68.setContent(html_76d3661d2d92428a7d9a4bce60c2962e);
+            
+        
+
+        marker_15098fd340522226f8c32cf6a3c4b05c.bindPopup(popup_5fc077dfc074a680f35a356c459c3a68)
+        ;
+
+        
+    
+    
+                marker_15098fd340522226f8c32cf6a3c4b05c.setIcon(icon_e68a2e387fc9d9ddff7d9bb188c38f0b);
+            
+    
+            var marker_f331a557900559a7ffecf49d0b3e25cc = L.marker(
+                [30.970302000000007, 80.242639],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_5ae589407e9177920a35ec5ca51f1249 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38321d577bffd2bf44adf3c41e2e3b11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9ae127fa4279cd005a409ed06eb9776 = $(`<div id="html_d9ae127fa4279cd005a409ed06eb9776" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 30.970302°<br>Lon: 80.242639°<br>             Original X: 14004.98<br>Original Y: 5689.58<br>             Address: 达巴乡, 札达县 རྩ་མདའ་རྫོང་།, 阿里地区 མངའ་རིས་ས་ཁུལ་, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国         </div>         </div>`)[0];
+                popup_38321d577bffd2bf44adf3c41e2e3b11.setContent(html_d9ae127fa4279cd005a409ed06eb9776);
+            
+        
+
+        marker_f331a557900559a7ffecf49d0b3e25cc.bindPopup(popup_38321d577bffd2bf44adf3c41e2e3b11)
+        ;
+
+        
+    
+    
+                marker_f331a557900559a7ffecf49d0b3e25cc.setIcon(icon_5ae589407e9177920a35ec5ca51f1249);
+            
+    
+            var marker_ad327fc3565671081713da93f2f6830d = L.marker(
+                [9.842302999999996, 79.066959],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_bb8f345da965272196697a8e50c01bfc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a4424d95351eafdb1383091ec156624 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d8dbf3c7087f68ec6845980a4c5cc18 = $(`<div id="html_1d8dbf3c7087f68ec6845980a4c5cc18" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 9.842303°<br>Lon: 79.066959°<br>             Original X: 13799.79<br>Original Y: 1726.32<br>             Address: Ettuseri, Marungur, Tiruvadanai, Ramanathapuram, Tamil Nadu, 623406, India         </div>         </div>`)[0];
+                popup_8a4424d95351eafdb1383091ec156624.setContent(html_1d8dbf3c7087f68ec6845980a4c5cc18);
+            
+        
+
+        marker_ad327fc3565671081713da93f2f6830d.bindPopup(popup_8a4424d95351eafdb1383091ec156624)
+        ;
+
+        
+    
+    
+                marker_ad327fc3565671081713da93f2f6830d.setIcon(icon_bb8f345da965272196697a8e50c01bfc);
+            
+    
+            var marker_19ab17d36d2436294cd893d789882a27 = L.marker(
+                [36.88752000000001, 83.344316],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_f3e59df5b92f743a29f0b9e1d5d95940 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa4326119a08947a32ea2267810455d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9cfce581cdcdb90601677ba07b2e5a23 = $(`<div id="html_9cfce581cdcdb90601677ba07b2e5a23" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 36.887520°<br>Lon: 83.344316°<br>             Original X: 14546.33<br>Original Y: 6935.32<br>             Address: 民丰县 نىيە ناھىيىسى, 和田地区 خوتەن ۋىلايىتى, 新疆维吾尔自治区 شىنجاڭ ئۇيغۇر ئاپتونوم رايونی, 中国         </div>         </div>`)[0];
+                popup_fa4326119a08947a32ea2267810455d9.setContent(html_9cfce581cdcdb90601677ba07b2e5a23);
+            
+        
+
+        marker_19ab17d36d2436294cd893d789882a27.bindPopup(popup_fa4326119a08947a32ea2267810455d9)
+        ;
+
+        
+    
+    
+                marker_19ab17d36d2436294cd893d789882a27.setIcon(icon_f3e59df5b92f743a29f0b9e1d5d95940);
+            
+    
+            var marker_d55f17f9b75a7c30f82a79793f71e199 = L.marker(
+                [36.16127300000001, 92.962611],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_b133af357fc2da063b8bfccdc1806c22 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79a24900e1780157e9db03e3fb5cd0a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4413e015d6a08943757f1ff85d7e682d = $(`<div id="html_4413e015d6a08943757f1ff85d7e682d" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 36.161273°<br>Lon: 92.962611°<br>             Original X: 16225.04<br>Original Y: 6777.58<br>             Address: 郭勒木德镇, 青海省, 中国         </div>         </div>`)[0];
+                popup_79a24900e1780157e9db03e3fb5cd0a1.setContent(html_4413e015d6a08943757f1ff85d7e682d);
+            
+        
+
+        marker_d55f17f9b75a7c30f82a79793f71e199.bindPopup(popup_79a24900e1780157e9db03e3fb5cd0a1)
+        ;
+
+        
+    
+    
+                marker_d55f17f9b75a7c30f82a79793f71e199.setIcon(icon_b133af357fc2da063b8bfccdc1806c22);
+            
+    
+            var marker_e3d33a383e8b554027f51fb7d3b3beb5 = L.marker(
+                [12.566699999999999, 75.3833],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_e7ad40480ae2aa543ac499f4d2bffbb5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea71b90adc109943007547945e412681 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_798548a0050e8d660454e414c031864d = $(`<div id="html_798548a0050e8d660454e414c031864d" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 12.566700°<br>Lon: 75.383300°<br>             Original X: 13156.87<br>Original Y: 2211.10<br>             Address: Sulya, Sulya taluk, Dakshina Kannada, Karnataka, 574239, India         </div>         </div>`)[0];
+                popup_ea71b90adc109943007547945e412681.setContent(html_798548a0050e8d660454e414c031864d);
+            
+        
+
+        marker_e3d33a383e8b554027f51fb7d3b3beb5.bindPopup(popup_ea71b90adc109943007547945e412681)
+        ;
+
+        
+    
+    
+                marker_e3d33a383e8b554027f51fb7d3b3beb5.setIcon(icon_e7ad40480ae2aa543ac499f4d2bffbb5);
+            
+    
+            var marker_884ef547d94c7eb3bcb6d22861982aea = L.marker(
+                [12.914100000000001, 74.856],
+                {
+}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+            var icon_330352080c4f0cd606e926072a8d8b98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "undo",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_046cf8af8c938e4a11c872e9abf1d1b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e958471c7590b891e89b51dded26572 = $(`<div id="html_5e958471c7590b891e89b51dded26572" style="width: 100.0%; height: 100.0%;">         <b>Reversed Coordinates</b><hr>         <div style="font-size:12px">             Lat: 12.914100°<br>Lon: 74.856000°<br>             Original X: 13064.84<br>Original Y: 2273.27<br>             Address: Bolpugudde, Gandhinagar, Kavoor, Mangaluru taluk, Dakshina Kannada, Karnataka, 575008, India         </div>         </div>`)[0];
+                popup_046cf8af8c938e4a11c872e9abf1d1b9.setContent(html_5e958471c7590b891e89b51dded26572);
+            
+        
+
+        marker_884ef547d94c7eb3bcb6d22861982aea.bindPopup(popup_046cf8af8c938e4a11c872e9abf1d1b9)
+        ;
+
+        
+    
+    
+                marker_884ef547d94c7eb3bcb6d22861982aea.setIcon(icon_330352080c4f0cd606e926072a8d8b98);
+            
+    
+            var poly_line_6ba154a465da148d97d4599ab3848725 = L.polyline(
+                [[26.543376999999996, 68.725312], [15.975850000000001, 74.473111], [29.357665000000008, 87.624285], [33.873207000000015, 70.521226], [20.235733, 68.864119], [14.340500999999994, 82.655303], [8.769543, 73.766292], [26.846648999999992, 83.803303], [14.392778, 85.088705], [31.47348300000001, 68.188464], [31.368758000000007, 88.246042], [17.867265000000007, 72.508905], [35.759179, 77.761242], [10.689629000000005, 70.804775], [32.577336999999986, 85.508055], [31.40671999999999, 89.162222], [23.550615, 96.220357], [18.977497000000003, 84.009178], [32.05273499999999, 85.937073], [32.98949999999999, 84.743212], [28.432582999999997, 69.328907], [14.609050000000003, 76.392251], [10.313967000000007, 74.750936], [10.929041000000007, 76.061234], [26.434848999999996, 78.580133], [18.735247999999995, 74.075704], [15.742356999999995, 95.16298299999998], [26.793025999999994, 85.664799], [12.963020999999994, 89.144677], [12.738671999999987, 79.004208], [36.696177000000006, 86.559993], [24.151542999999993, 87.853813], [32.44270600000001, 90.503997], [14.642394000000007, 68.930907], [17.148137999999992, 75.764485], [14.118502000000005, 95.34438200000001], [33.41466099999999, 77.125659], [27.007720999999997, 79.473325], [34.521879999999996, 81.306704], [15.681525000000004, 75.152198], [24.279675999999995, 75.619507], [24.952994000000007, 94.036864], [19.582615, 74.360302], [36.928591, 82.776263], [10.636372999999997, 69.366375], [11.179825, 86.195935], [30.970302000000007, 80.242639], [9.842302999999996, 79.066959], [36.88752000000001, 83.344316], [36.16127300000001, 92.962611], [12.566699999999999, 75.3833], [12.914100000000001, 74.856]],
+                {"bubblingMouseEvents": true, "color": "#ff4444", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "#ff4444", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(feature_group_64775892e8952ac5cedde1c44e448a0c);
+        
+    
+
+            L.control.groupedLayers(
+                null,
+                {
+                    "Projection View" : {
+                        "Original Projection" : feature_group_6fe238015d0d2481c1ff76a5a2bc34e6,
+                        "Reversed Projection" : feature_group_64775892e8952ac5cedde1c44e448a0c,
+                    },
+                },
+                {
+  "collapsed": false,
+  "exclusiveGroups": [
+"Projection View",
+],
+},
+            ).addTo(map_2348e34f1ca557cc571eb568b8bd2c67);
+            feature_group_64775892e8952ac5cedde1c44e448a0c.remove();
+
+        
+    
+            var mouse_position_8a16363011d77ad07e821942690cc305 = new L.Control.MousePosition(
+                {
+  "position": "bottomleft",
+  "separator": " : ",
+  "emptyString": "Unavailable",
+  "lngFirst": false,
+  "numDigits": 5,
+  "prefix": "",
+}
+            );
+            mouse_position_8a16363011d77ad07e821942690cc305.options["latFormatter"] =
+                undefined;
+            mouse_position_8a16363011d77ad07e821942690cc305.options["lngFormatter"] =
+                undefined;
+            map_2348e34f1ca557cc571eb568b8bd2c67.addControl(mouse_position_8a16363011d77ad07e821942690cc305);
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topright",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_2348e34f1ca557cc571eb568b8bd2c67);
+        
+    
+            var layer_control_6a12865e7878ddfd9653088358747e2c_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_6f7d2bbb325f6b8294855f48d13396f4,
+                    "3D View" : tile_layer_6d6e41011b840a7a9f9910e206387db1,
+                    "2D View" : tile_layer_d32eee5de64ad6a9752f10830f6df552,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_6a12865e7878ddfd9653088358747e2c = L.control.layers(
+                layer_control_6a12865e7878ddfd9653088358747e2c_layers.base_layers,
+                layer_control_6a12865e7878ddfd9653088358747e2c_layers.overlays,
+                {
+  "position": "topleft",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_2348e34f1ca557cc571eb568b8bd2c67);
+
+        
+</script>
+</html>
